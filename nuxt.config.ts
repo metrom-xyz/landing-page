@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     nitro: {
         static: true,
     },
+    build: {
+        transpile: ["@metrom-xyz/ui"],
+    },
     runtimeConfig: {
         public: {
             showDappLinks: process.env.ENVIRONMENT !== "production",
