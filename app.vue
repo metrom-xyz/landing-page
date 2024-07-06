@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useHead, useRuntimeConfig, useSeoMeta } from "#imports";
+import { useHead, useSeoMeta } from "#imports";
 import NavigationBar from "./components/NavigationBar.vue";
 import Hero from "./components/Hero.vue";
 import Audits from "./components/Audits.vue";
@@ -9,10 +9,6 @@ import DeepDive from "./components/DeepDive.vue";
 import Faqs from "./components/faqs/Faqs.vue";
 import Socials from "./components/Socials.vue";
 import About from "./components/About.vue";
-
-const {
-    public: { showDappLinks },
-} = useRuntimeConfig();
 
 useHead({
     link: [
@@ -74,7 +70,7 @@ useSeoMeta({
                 <DeepDive />
                 <Faqs />
                 <Socials />
-                <About v-if="showDappLinks" />
+                <About />
             </div>
         </div>
     </div>
