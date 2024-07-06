@@ -93,6 +93,7 @@ export default defineI18nConfig(() => ({
                 audits: "Audits",
                 team: "Team",
                 documentation: "Documentation",
+                roadmap: "Roadmap",
             },
         },
     },

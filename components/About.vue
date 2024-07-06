@@ -29,6 +29,15 @@ const {
                     {{ $t("about.documentation") }}
                 </MetTypography>
             </a>
+            <a
+                href="https://metrom.gitbook.io/metrom/roadmap"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <MetTypography medium lg>
+                    {{ $t("about.roadmap") }}
+                </MetTypography>
+            </a>
         </div>
     </section>
 </template>
