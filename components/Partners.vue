@@ -6,6 +6,8 @@ import InfoCard from "./InfoCard.vue";
 import HatsFinanceLogo from "./logos/HatsFinance.vue";
 import AlgebraLogo from "./logos/Algebra.vue";
 import SwaprLogo from "./logos/Swapr.vue";
+import SwapsicleLogo from "./logos/Swapsicle.vue";
+import KimLogo from "./logos/Kim.vue";
 
 const PARTNERS = [
     {
@@ -19,6 +21,14 @@ const PARTNERS = [
     {
         name: "Swapr",
         logo: SwaprLogo,
+    },
+    {
+        name: "Swapsicle",
+        logo: SwapsicleLogo,
+    },
+    {
+        name: "Kim",
+        logo: KimLogo,
     },
 ];
 </script>
