@@ -1,3 +1,4 @@
+export const BASE_URL = "https://www.metrom.xyz";
 export const APP_LINK = "https://app.metrom.xyz";
 export const DOCUMENTATION_LINK = "https://docs.metrom.xyz";
 export const GITHUB_LINK = "https://github.com/metrom-xyz";
