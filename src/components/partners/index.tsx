@@ -13,6 +13,7 @@ import { Partner } from "./partner";
 import { Button, Typography } from "@metrom-xyz/ui";
 import { Hats } from "@/app/assets/logos/hats";
 import { DISCORD_LINK } from "@/common";
+import { OxCommit } from "@/app/assets/logos/0x-commit";
 
 interface Partner {
     name: string;
@@ -49,6 +50,10 @@ const AUDITORS: Partner[] = [
     {
         name: "Hats",
         icon: Hats,
+    },
+    {
+        name: "0xCommit",
+        icon: OxCommit,
     },
 ];
 
