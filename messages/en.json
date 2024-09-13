@@ -1,0 +1,59 @@
+{
+    "hero": {
+        "title": "Optimise your DeFi liquidity mining incentives",
+        "description": "Design and run efficient incentive schemes for your DeFi protocol. Reduce waste and maximize returns on your liquidity mining programs.",
+        "launch": "Launch app",
+        "more": "Learn more"
+    },
+    "features": {
+        "efficient": {
+            "title": "Efficient Incentive Design",
+            "description": "Create tailored incentive schemes that maximize capital efficiency and minimize waste."
+        },
+        "analytics": {
+            "title": "Real-time Analytics",
+            "description": "Monitor and analyze the performance of your liquidity mining programs in real-time."
+        },
+        "management": {
+            "title": "Risk Management",
+            "description": "Implement safeguards and risk management strategies to protect your protocol and users."
+        }
+    },
+    "partners": {
+        "title": "Partners",
+        "chains": "Chains",
+        "amms": "AMMs",
+        "auditors": "Auditors"
+    },
+    "quickstart": {
+        "title": "Unlock DEFI incentivisation in 3 easy steps"
+    },
+    "faqs": {
+        "metrom": {
+            "title": "What is Metrom?",
+            "text": "Metrom is a platform designed for AMMs and projects to create efficient incentive structures for liquidity providers. It allows campaign creators to set up multiple campaigns and reward up to five tokens per campaign, all in a single transaction. The process is streamlined into four steps that can be completed in under a minute."
+        },
+        "incentives": {
+            "title": "What are Efficiency incentives?",
+            "text": "Efficiency incentives are rewards structures designed to achieve the desired TVL within a specified range, without leaking unnecessary rewards. They ensure that liquidity is provided where it is most needed without over-incentivizing, thus preventing reward leakage and maximizing the effectiveness of the incentives."
+        },
+        "providers": {
+            "title": "What Metrom offers to Liquidity Providers?",
+            "text1": "Metrom provides liquidity providers with the ability to:",
+            "text2": "Compare APRs across different pools.",
+            "text3": "Claim rewards from your Metrom dashboard."
+        }
+    },
+    "articles": {
+        "title": "Article",
+        "read": "Read now"
+    },
+    "footer": {
+        "byCarrot": "© {year} Made with love by Carrot Labs",
+        "links": {
+            "support": "Support",
+            "documentation": "Documentation",
+            "contact": "Contact us"
+        }
+    }
+}
