@@ -49,9 +49,9 @@ export function Footer() {
     const t = useTranslations("footer");
 
     return (
-        <footer className="w-full flex justify-between mt-16 max-w-screen-2xl">
-            <div className="flex flex-col gap-20">
-                <div className="flex items-center gap-11">
+        <footer className="w-full flex flex-col-reverse items-center gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
+            <div className="flex flex-col gap-11 md:gap-20">
+                <div className="flex items-center justify-center gap-11">
                     {SOCIALS.map(({ icon: Icon, link, text }, index) => (
                         <a
                             key={index}
@@ -71,7 +71,7 @@ export function Footer() {
                     </Typography>
                 </div>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="h-full flex flex-col gap-3 text-center md:text-left">
                 {LINKS.map((link, index) => (
                     <a
                         key={index}

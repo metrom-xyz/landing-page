@@ -9,9 +9,9 @@ export function Hero() {
     const t = useTranslations("hero");
 
     return (
-        <section className="flex flex-col gap-9 items-center text-center justify-center w-full max-w-screen-2xl py-28 rounded-4xl bg-white">
+        <section className="w-full flex flex-col gap-9 items-center text-center justify-center max-w-screen-2xl py-28 px-4 rounded-4xl bg-white">
             <Metrom className="mb-9" />
-            <Typography className="text-6xl font-semibold max-w-[800px]">
+            <Typography className="text-[2.5rem] md:text-[5.625rem] leading-normal font-semibold">
                 {t("title")}
             </Typography>
             <Typography

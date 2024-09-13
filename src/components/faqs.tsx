@@ -29,7 +29,7 @@ export function Tokens() {
     const t = useTranslations("faqs");
 
     return (
-        <div className="flex gap-1">
+        <div className="flex flex-col md:flex-row gap-1">
             <Typography variant="lg" className="leading-normal">
                 {t("tokens.text1")}
             </Typography>
@@ -43,7 +43,7 @@ export function Tokens() {
                     weight="medium"
                     className="leading-normal text-brand-blue"
                 >
-                    {t("tokens.text2")}
+                    {t("tokens.text2")}.
                 </Typography>
             </a>
         </div>
