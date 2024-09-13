@@ -1,42 +1,33 @@
 {
     "name": "landing-page",
+    "version": "0.1.0",
     "private": true,
-    "type": "module",
     "scripts": {
-        "build": "nuxt build",
-        "dev": "nuxt dev",
-        "generate": "nuxt generate",
-        "preview": "nuxt preview",
-        "postinstall": "nuxt prepare",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
-        "commitlint": "commitlint -e",
-        "prepare": "husky"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
     "dependencies": {
-        "@fontsource-variable/inter": "^5.0.18",
-        "@metrom-xyz/sdk": "^0.2.4",
-        "@metrom-xyz/ui": "^0.4.6",
-        "@nuxt/eslint": "^0.3.13",
-        "@nuxt/image": "^1.7.0",
-        "@nuxtjs/i18n": "^8.3.1",
-        "vue": "^3.4.31",
-        "vue3-marquee": "^4.2.0"
+        "@fontsource/ibm-plex-mono": "^5.0.15",
+        "@fontsource/ibm-plex-sans": "^5.0.22",
+        "@metrom-xyz/ui": "^0.4.7",
+        "next": "14.2.9",
+        "next-intl": "^3.19.1",
+        "react": "^18",
+        "react-dom": "^18"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.27.7",
-        "@commitlint/cli": "^19.3.0",
-        "@commitlint/config-conventional": "^19.2.2",
-        "@types/node": "^20.14.9",
-        "autoprefixer": "^10.4.19",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.9",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-prettier": "^5.1.3",
-        "husky": "^9.0.11",
-        "nuxt": "^3.12.3",
-        "nuxt-fathom": "^0.0.2",
-        "postcss": "^8.4.39",
-        "prettier": "^3.3.0",
-        "tailwindcss": "^3.4.4",
-        "typescript": "^5.5.3"
+        "eslint-plugin-prettier": "^5.2.1",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
     }
 }
