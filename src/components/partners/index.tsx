@@ -56,7 +56,7 @@ export function Partners() {
     const t = useTranslations("partners");
 
     return (
-        <section className="w-full flex flex-col gap-10 p-7 md:p-10 bg-white rounded-4xl">
+        <section className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 bg-white rounded-4xl">
             <Typography className="text-4xl font-semibold text-center">
                 {t("title")}
             </Typography>

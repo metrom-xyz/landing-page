@@ -27,7 +27,7 @@ export function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={{
-                        root: "min-w-44 bg-brand-green hover:bg-green-300 text-black",
+                        root: "md:min-w-44 bg-brand-green hover:bg-green-300 text-black",
                     }}
                 >
                     {t("launch")}
@@ -36,7 +36,7 @@ export function Hero() {
                     href={DOCUMENTATION_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={{ root: "min-w-44" }}
+                    className={{ root: "md:min-w-44" }}
                 >
                     {t("more")}
                 </Button>

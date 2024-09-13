@@ -8,7 +8,7 @@ export function Quickstart() {
     const t = useTranslations("quickstart");
 
     return (
-        <div className="w-full flex flex-col gap-10 p-7 md:p-10 bg-white rounded-4xl">
+        <div className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 bg-white rounded-4xl">
             <Typography
                 variant="xl4"
                 className="text-4xl font-semibold text-center"
