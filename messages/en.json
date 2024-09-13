@@ -1,7 +1,7 @@
 {
     "hero": {
-        "title": "Optimise your DeFi liquidity mining incentives",
-        "description": "Design and run efficient incentive schemes for your DeFi protocol. Reduce waste and maximize returns on your liquidity mining programs.",
+        "title": "Design your incentives",
+        "description": "Attract liquidity providers by tailoring rewards to meet your specific goals.",
         "launch": "Launch app",
         "more": "Learn more"
     },
@@ -23,10 +23,23 @@
         "title": "Partners",
         "chains": "Chains",
         "amms": "AMMs",
-        "auditors": "Auditors"
+        "auditors": "Auditors",
+        "add": "Your project"
     },
     "quickstart": {
-        "title": "Unlock DEFI incentivisation in 3 easy steps"
+        "title": "DEFI Incentivization",
+        "step1": {
+            "title": "Simple Creation Flow",
+            "description": "A 3-step campaign creation process completed in two minutes gives you almost instant access to liquidity providers."
+        },
+        "step2": {
+            "title": "Flexible Incentives",
+            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution. "
+        },
+        "step3": {
+            "title": "One Transaction",
+            "description": "Add multiple to a single campaign, and stack multiple campaign in an transactions."
+        }
     },
     "faqs": {
         "metrom": {
@@ -42,6 +55,11 @@
             "text1": "Metrom provides liquidity providers with the ability to:",
             "text2": "Compare APRs across different pools.",
             "text3": "Claim rewards from your Metrom dashboard."
+        },
+        "tokens": {
+            "title": "How to whitelist a reward token?",
+            "text1": "To whitelist your token, submit an issue with all the required token details",
+            "text2": "on our GitHub"
         }
     },
     "articles": {
@@ -50,6 +68,12 @@
     },
     "footer": {
         "byCarrot": "© {year} Made with love by Carrot Labs",
+        "socials": {
+            "github": "Github",
+            "x": "Follow us on X",
+            "discord": "Join our Discord server",
+            "telegram": "Join our Telegram chat"
+        },
         "links": {
             "support": "Support",
             "documentation": "Documentation",

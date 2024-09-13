@@ -5,24 +5,39 @@ import { Discord } from "@/app/assets/socials/discord";
 import { Github } from "@/app/assets/socials/github";
 import { Telegram } from "@/app/assets/socials/telegram";
 import { X } from "@/app/assets/socials/x";
+import {
+    DISCORD_LINK,
+    DOCUMENTATION_LINK,
+    GITHUB_LINK,
+    TELEGRAM_LINK,
+    X_ACCOUNT_LINK,
+} from "@/common";
 import { Typography } from "@metrom-xyz/ui";
 import { useTranslations } from "next-intl";
 
 const SOCIALS = [
-    { icon: Github, link: "https://github.com/metrom-xyz" },
-    { icon: X, link: "https://x.com/metromxyz" },
-    { icon: Discord, link: "https://t.co/CxuKegMffl" },
-    { icon: Telegram, link: "https://t.me/metrom_xyz" },
+    {
+        text: "socials.github",
+        icon: Github,
+        link: GITHUB_LINK,
+    },
+    { text: "socials.x", icon: X, link: X_ACCOUNT_LINK },
+    { text: "socials.discord", icon: Discord, link: DISCORD_LINK },
+    {
+        text: "socials.telegram",
+        icon: Telegram,
+        link: TELEGRAM_LINK,
+    },
 ];
 
 const LINKS = [
     {
         text: "links.support",
-        link: "https://t.co/CxuKegMffl",
+        link: DISCORD_LINK,
     },
     {
         text: "links.documentation",
-        link: "https://docs.metrom.xyz",
+        link: DOCUMENTATION_LINK,
     },
     {
         text: "links.contact",
@@ -37,10 +52,11 @@ export function Footer() {
         <footer className="w-full flex justify-between mt-16 max-w-screen-2xl">
             <div className="flex flex-col gap-20">
                 <div className="flex items-center gap-11">
-                    {SOCIALS.map(({ icon: Icon, link }, index) => (
+                    {SOCIALS.map(({ icon: Icon, link, text }, index) => (
                         <a
                             key={index}
                             href={link}
+                            aria-label={t(text)}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -50,7 +66,7 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col gap-2">
                     <Metrom className="max-w-60" />
-                    <Typography variant="sm" light>
+                    <Typography variant="sm" className="text-gray-600">
                         {t("byCarrot", { year: new Date().getFullYear() })}
                     </Typography>
                 </div>
@@ -64,9 +80,8 @@ export function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Typography
-                            variant="lg"
                             weight="medium"
-                            light={index > 0}
+                            className={`${index > 0 && "text-gray-600"}`}
                         >
                             {t(link.text)}
                         </Typography>

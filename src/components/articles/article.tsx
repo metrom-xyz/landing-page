@@ -11,7 +11,12 @@ export function Article({ title, link }: ArticleProps) {
 
     return (
         <div className="w-fit min-h-[500px] max-w-[413px] flex flex-col items-center text-center gap-8 p-10 bg-white rounded-2xl">
-            <Typography variant="lg" uppercase weight="medium" light>
+            <Typography
+                variant="lg"
+                uppercase
+                weight="medium"
+                className="text-gray-600"
+            >
                 {t("title")}
             </Typography>
             <Typography variant="xl5" className="font-semibold flex-1">

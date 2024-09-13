@@ -13,7 +13,10 @@ export function Partner({ icon: Icon, name }: PartnerProps) {
             <div className="bg-black p-5 rounded-2xl h-24 w-24">
                 <Icon className="h-full w-full" />
             </div>
-            <Typography light weight="medium" className="leading-normal">
+            <Typography
+                weight="medium"
+                className="leading-normal text-gray-600"
+            >
                 {name}
             </Typography>
         </div>
