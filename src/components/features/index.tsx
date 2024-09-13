@@ -10,7 +10,7 @@ export function Features() {
     const t = useTranslations("features");
 
     return (
-        <div className="flex items-center gap-20 md:px-28">
+        <div className="flex flex-col md:flex-row items-center gap-20 md:px-28">
             <Feature
                 icon={EfficientIcon}
                 title={t("efficient.title")}

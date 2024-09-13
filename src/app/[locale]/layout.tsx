@@ -25,7 +25,7 @@ export default async function Layout({
     const messages = await getMessages();
 
     return (
-        <html lang={locale} className="bg-gray-100 p-12">
+        <html lang={locale} className="bg-gray-100 p-4 md:p-12">
             <body>
                 <NextIntlClientProvider messages={messages}>
                     {children}

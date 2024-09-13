@@ -8,11 +8,14 @@ export function Quickstart() {
     const t = useTranslations("quickstart");
 
     return (
-        <div className="w-full flex flex-col gap-10 p-10 bg-white rounded-4xl">
-            <Typography variant="xl4" className="font-semibold">
+        <div className="w-full flex flex-col gap-10 p-7 md:p-10 bg-white rounded-4xl">
+            <Typography
+                variant="xl4"
+                className="text-4xl font-semibold text-center"
+            >
                 {t("title")}
             </Typography>
-            <div className="flex gap-6 items-center">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center">
                 <Step
                     number={1}
                     title={t("step1.title")}

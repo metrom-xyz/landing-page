@@ -16,12 +16,12 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
             <div className="p-5 bg-white rounded-2xl">
                 <Icon />
             </div>
-            <Typography variant="xl2" className="font-semibold">
+            <Typography variant="xl2" className="text-2xl font-semibold">
                 {title}
             </Typography>
             <Typography
                 weight="medium"
-                className="leading-normal text-gray-600"
+                className="text-lg leading-normal text-gray-600"
             >
                 {description}
             </Typography>

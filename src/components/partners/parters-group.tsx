@@ -8,11 +8,11 @@ interface ParnersGroupProps {
 
 export function ParnersGroup({ title, children }: ParnersGroupProps) {
     return (
-        <div className="w-fit h-fit p-7 flex flex-col gap-6 bg-gray-100 rounded-2xl">
-            <Typography variant="xl2" className="font-semibold">
+        <div className="w-fit h-fit md:p-7 flex flex-col gap-6 md:bg-gray-100 rounded-2xl">
+            <Typography className="text-xl2 font-semibold text-center md:text-left">
                 {title}
             </Typography>
-            <div className="flex flex-wrap gap-8">{children}</div>
+            <div className="flex flex-wrap gap-3.5 md:gap-8">{children}</div>
         </div>
     );
 }

@@ -56,13 +56,11 @@ export function Partners() {
     const t = useTranslations("partners");
 
     return (
-        <section className="w-full flex flex-col gap-10 p-10 bg-white rounded-4xl">
-            <div className="text-center">
-                <Typography variant="xl4" className="font-semibold">
-                    {t("title")}
-                </Typography>
-            </div>
-            <div className="flex gap-6 flex-wrap">
+        <section className="w-full flex flex-col gap-10 p-7 md:p-10 bg-white rounded-4xl">
+            <Typography className="text-4xl font-semibold text-center">
+                {t("title")}
+            </Typography>
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-6 flex-wrap">
                 <ParnersGroup title={t("chains")}>
                     {CHAINS.map((chain) => (
                         <Partner
