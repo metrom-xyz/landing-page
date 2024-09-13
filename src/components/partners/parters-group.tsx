@@ -12,7 +12,7 @@ export function ParnersGroup({ title, children }: ParnersGroupProps) {
             <Typography variant="xl2" className="font-semibold">
                 {title}
             </Typography>
-            <div className="flex gap-8">{children}</div>
+            <div className="flex flex-wrap gap-8">{children}</div>
         </div>
     );
 }

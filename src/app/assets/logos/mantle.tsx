@@ -10,7 +10,7 @@ export function Mantle(props: SVGIconProps) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <g clip-path="url(#clip0_362_19983)">
+            <g clipPath="url(#clip0_362_19983)">
                 <path
                     d="M71.5812 0.0161743H0.190186V70.7251H71.5812V0.0161743Z"
                     fill="black"

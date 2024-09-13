@@ -17,7 +17,6 @@ export function Hero() {
             <Typography
                 variant="xl2"
                 weight="medium"
-                light
                 className="max-w-[600px] text-gray-600"
             >
                 {t("description")}

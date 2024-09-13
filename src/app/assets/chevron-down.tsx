@@ -13,9 +13,9 @@ export function ChrevronDown(props: SVGIconProps) {
             <path
                 d="M1 1L5 5L9 1"
                 stroke="#101827"
-                stroke-width="1.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.33333"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             />
         </svg>
     );

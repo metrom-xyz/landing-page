@@ -10,8 +10,9 @@ import { Algebra } from "@/app/assets/logos/algebra";
 import { Mantle } from "@/app/assets/logos/mantle";
 import { ParnersGroup } from "./parters-group";
 import { Partner } from "./partner";
-import { Typography } from "@metrom-xyz/ui";
+import { Button, Typography } from "@metrom-xyz/ui";
 import { Hats } from "@/app/assets/logos/hats";
+import { DISCORD_LINK } from "@/common";
 
 interface Partner {
     name: string;
@@ -90,6 +91,14 @@ export function Partners() {
                     ))}
                 </ParnersGroup>
             </div>
+            <Button
+                href={DISCORD_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={{ root: "self-center" }}
+            >
+                {t("add")}
+            </Button>
         </section>
     );
 }
