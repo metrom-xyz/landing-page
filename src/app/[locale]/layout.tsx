@@ -13,9 +13,24 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "Metrom",
     description: "Design your incentives to AMMplify liquidity.",
+    alternates: {
+        canonical: "/",
+        languages: {
+            "en-US": "/en",
+        },
+    },
+    keywords: [
+        "metrom",
+        "incentives",
+        "incentivisation",
+        "amm",
+        "liquidity",
+        "mining",
+        "efficiency",
+    ],
 };
 
-export default async function Layout({
+export default async function RootLayout({
     children,
     params: { locale },
 }: Readonly<{
