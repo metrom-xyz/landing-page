@@ -20,7 +20,7 @@ export function Accordion({ title, children }: AccordionProps) {
         <div className="w-full flex flex-col bg-white rounded-2xl">
             <div
                 onClick={handleOnToggleOpen}
-                className="flex items-center justify-between w-full p-6 select-none cursor-pointer rounded-2xl"
+                className="flex items-center justify-between w-full p-6 select-none cursor-pointer rounded-2xl duration-200 ease-in-out transition-colors hover:bg-gray-200"
             >
                 <Typography variant="xl" weight="medium">
                     {title}
