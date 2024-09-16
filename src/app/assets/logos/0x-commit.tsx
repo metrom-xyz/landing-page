@@ -10,7 +10,7 @@ export function OxCommit(props: SVGIconProps) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <g clipPath="url(#clip0_463_39944)">
+            <g clip-path="url(#clip0_573_2037)">
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -19,19 +19,19 @@ export function OxCommit(props: SVGIconProps) {
                 />
                 <path
                     d="M61.6591 52.2757L55.2329 57.8493L106.29 116.948L112.716 111.374L61.6591 52.2757Z"
-                    fill="#020126"
+                    fill="#FFFFFB"
                 />
                 <path
                     d="M117.563 117.375L106.32 116.92L112.194 110.832L117.547 117.375H117.563Z"
-                    fill="#020126"
+                    fill="#FFFFFB"
                 />
                 <path
                     d="M50.4927 52.3647H61.736L55.3063 57.9972L50.4927 52.3647Z"
-                    fill="#020126"
+                    fill="#FFFFFB"
                 />
             </g>
             <defs>
-                <clipPath id="clip0_463_39944">
+                <clipPath id="clip0_573_2037">
                     <rect width="144.746" height="170" fill="white" />
                 </clipPath>
             </defs>

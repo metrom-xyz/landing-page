@@ -3,27 +3,22 @@ import { SVGIconProps } from "@/types";
 export function Base(props: SVGIconProps) {
     return (
         <svg
-            width="57"
-            height="58"
-            viewBox="0 0 57 58"
+            width="111"
+            height="111"
+            viewBox="0 0 111 111"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <g clipPath="url(#clip0_362_19991)">
+            <g clipPath="url(#clip0_573_2038)">
                 <path
-                    d="M28.0618 0.940907C43.6199 0.940907 56.231 13.5296 56.231 29.0607C56.231 44.5918 43.6199 57.1805 28.0618 57.1805C13.3022 57.1805 1.19498 45.8471 -0.00854492 31.425H37.2243V26.6964H-0.00854492C1.19498 12.2743 13.3022 0.940907 28.0618 0.940907Z"
-                    fill="white"
+                    d="M54.921 110.034C85.359 110.034 110.034 85.402 110.034 55.017C110.034 24.6319 85.359 0 54.921 0C26.0432 0 2.35281 22.1714 0 50.3923H72.8467V59.6416H3.9565e-07C2.35281 87.8625 26.0432 110.034 54.921 110.034Z"
+                    fill="#0052FF"
                 />
             </g>
             <defs>
-                <clipPath id="clip0_362_19991">
-                    <rect
-                        width="56.2396"
-                        height="56.2396"
-                        fill="white"
-                        transform="matrix(1 0 0 -1 -0.0078125 57.1804)"
-                    />
+                <clipPath id="clip0_573_2038">
+                    <rect width="111" height="111" fill="white" />
                 </clipPath>
             </defs>
         </svg>
