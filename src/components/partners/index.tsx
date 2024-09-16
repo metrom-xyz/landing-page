@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { FunctionComponent } from "react";
 import { SVGIconProps } from "@/types";
 import { Base } from "@/app/assets/logos/base";
+import { Mode } from "@/app/assets/logos/mode";
 import { Kim } from "@/app/assets/logos/kim";
 import { Swapsicle } from "@/app/assets/logos/swapsicle";
 import { Algebra } from "@/app/assets/logos/algebra";
@@ -14,6 +15,7 @@ import { Button, Typography } from "@metrom-xyz/ui";
 import { Hats } from "@/app/assets/logos/hats";
 import { DISCORD_LINK } from "@/common";
 import { OxCommit } from "@/app/assets/logos/0x-commit";
+import { PlusSquareIcon } from "@/app/assets/plus-square-icon";
 
 interface Partner {
     name: string;
@@ -24,6 +26,10 @@ const CHAINS: Partner[] = [
     {
         name: "Base",
         icon: Base,
+    },
+    {
+        name: "Mode",
+        icon: Mode,
     },
     {
         name: "Mantle",
@@ -65,7 +71,7 @@ export function Partners() {
             <Typography className="text-4xl font-semibold text-center">
                 {t("title")}
             </Typography>
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-6 flex-wrap">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 flex-wrap">
                 <ParnersGroup title={t("chains")}>
                     {CHAINS.map((chain) => (
                         <Partner
@@ -95,6 +101,7 @@ export function Partners() {
                 </ParnersGroup>
             </div>
             <Button
+                icon={PlusSquareIcon}
                 href={DISCORD_LINK}
                 target="_blank"
                 rel="noopener noreferrer"

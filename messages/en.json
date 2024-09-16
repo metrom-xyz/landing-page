@@ -11,7 +11,7 @@
             "description": "Create tailored incentive schemes that maximize capital efficiency and minimize waste."
         },
         "analytics": {
-            "title": "Real-time Analytics",
+            "title": "Simple Creation Flow",
             "description": "Monitor and analyze the performance of your liquidity mining programs in real-time."
         },
         "management": {
@@ -23,8 +23,8 @@
         "title": "Partners",
         "chains": "Chains",
         "amms": "AMMs",
-        "auditors": "Auditors",
-        "add": "Your project"
+        "auditors": "Audits",
+        "add": "Partner with Us"
     },
     "quickstart": {
         "title": "DEFI Incentivisation",
