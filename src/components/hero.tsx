@@ -11,7 +11,7 @@ export function Hero() {
     return (
         <section className="w-full flex flex-col gap-9 items-center text-center justify-center max-w-screen-2xl py-28 px-4 rounded-4xl bg-white">
             <Metrom className="mb-9" />
-            <Typography className="text-[2.5rem] md:text-[5.625rem] leading-normal font-semibold">
+            <Typography className="text-[2.5rem] md:text-6xl leading-normal font-semibold max-w-5xl">
                 {t("title")}
             </Typography>
             <Typography

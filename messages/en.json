@@ -1,22 +1,22 @@
 {
     "hero": {
-        "title": "Design your incentives",
-        "description": "Attract liquidity providers by tailoring rewards to meet your specific goals.",
+        "title": "Maximize Your Liquidity Mining Impact with Precision Incentives",
+        "description": "Run efficient incentive strategies for your liquidity providers. Reduce leakage and maximize returns by using Metrom",
         "launch": "Launch app",
         "more": "Learn more"
     },
     "features": {
         "efficient": {
             "title": "Efficient Incentive Design",
-            "description": "Create tailored incentive schemes that maximize capital efficiency and minimize waste."
+            "description": "Create tailored incentive structures that maximize capital efficiency and minimize leakage"
         },
-        "analytics": {
+        "simple": {
             "title": "Simple Creation Flow",
-            "description": "Monitor and analyze the performance of your liquidity mining programs in real-time."
+            "description": "A simple and straightforward 3-step process towards creating custom campaigns"
         },
-        "management": {
-            "title": "Risk Management",
-            "description": "Implement safeguards and risk management strategies to protect your protocol and users."
+        "kpi": {
+            "title": "Set Community KPI",
+            "description": "Implement TVL KPIs for the community to unlock rewards based on TVL achieved"
         }
     },
     "partners": {
@@ -50,6 +50,14 @@
             "title": "What are Efficiency incentives?",
             "text": "Efficiency incentives are rewards structures designed to achieve the desired TVL within a specified range, without leaking unnecessary rewards. They ensure that liquidity is provided where it is most needed without over-incentivizing, thus preventing reward leakage and maximizing the effectiveness of the incentives."
         },
+        "campaigns": {
+            "title": "How to create an Incentive Campaign?",
+            "text1": "To create an incentive campaign, go to <link>metrom.xyz.app</link> and follow these four simple steps:",
+            "text2": "Select the pair you want to incentivize.",
+            "text3": "Set the campaign duration.",
+            "text4": "Specify the amount and type of rewards tokens.",
+            "text5": "Launch the campaign."
+        },
         "providers": {
             "title": "What Metrom offers to Liquidity Providers?",
             "text1": "Metrom provides liquidity providers with the ability to:",
@@ -58,8 +66,7 @@
         },
         "tokens": {
             "title": "How to whitelist a reward token?",
-            "text1": "To whitelist your token, submit an issue with all the required token details",
-            "text2": "on our GitHub"
+            "text1": "To whitelist your token, submit an issue with all the required token details <link>on our GitHub</link>."
         }
     },
     "articles": {

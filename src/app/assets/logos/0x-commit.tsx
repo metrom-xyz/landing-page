@@ -10,7 +10,7 @@ export function OxCommit(props: SVGIconProps) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <g clip-path="url(#clip0_463_39944)">
+            <g clipPath="url(#clip0_463_39944)">
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"

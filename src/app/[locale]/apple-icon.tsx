@@ -8,7 +8,7 @@ export const size = {
 export const contentType = "image/png";
 
 export default function AppleIcon() {
-    return new ImageResponse(<MetromCompact className="h-8 w-8" />, {
+    return new ImageResponse(<MetromCompact {...size} />, {
         ...size,
     });
 }

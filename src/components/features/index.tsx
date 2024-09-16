@@ -18,13 +18,13 @@ export function Features() {
             />
             <Feature
                 icon={RealtimeIcon}
-                title={t("analytics.title")}
-                description={t("analytics.description")}
+                title={t("simple.title")}
+                description={t("simple.description")}
             />
             <Feature
                 icon={ShieldIcon}
-                title={t("management.title")}
-                description={t("management.description")}
+                title={t("kpi.title")}
+                description={t("kpi.description")}
             />
         </div>
     );
