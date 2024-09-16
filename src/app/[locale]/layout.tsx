@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { BASE_URL } from "@/common";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -12,11 +13,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Metrom",
-    description: "Design your incentives to AMMplify liquidity.",
+    description:
+        "Maximize Your Liquidity Mining Impact with Precision Incentives",
     alternates: {
-        canonical: "/",
+        canonical: BASE_URL,
         languages: {
-            "en-US": "/en",
+            "en-US": `${BASE_URL}/en`,
         },
     },
     keywords: [
