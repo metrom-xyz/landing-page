@@ -1,6 +1,6 @@
 import { SVGIconProps } from "@/types";
 
-export function ChrevronDown(props: SVGIconProps) {
+export function ChrevronDownIcon(props: SVGIconProps) {
     return (
         <svg
             width="10"

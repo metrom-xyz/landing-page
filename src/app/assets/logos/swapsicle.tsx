@@ -3,55 +3,166 @@ import { SVGIconProps } from "@/types";
 export function Swapsicle(props: SVGIconProps) {
     return (
         <svg
-            width="61"
-            height="62"
-            viewBox="0 0 61 62"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="736.524"
+            height="738.182"
+            viewBox="0 0 736.524 738.182"
+            preserveAspectRatio="xMidYMid"
             {...props}
         >
-            <mask
-                id="a"
-                width={61}
-                height={62}
-                x={0}
-                y={0}
-                maskUnits="userSpaceOnUse"
-                style={{
-                    maskType: "alpha",
-                }}
-            >
-                <path
-                    fill="#7F7F7F"
-                    d="M49.384 50.174a2.826 2.826 0 0 0 0 3.962l6.587 6.59a2.8 2.8 0 0 0 3.836-.12 2.808 2.808 0 0 0 .122-3.841l-6.586-6.591a2.822 2.822 0 0 0-3.959 0Z"
-                />
-                <path
-                    fill="#7F7F7F"
-                    d="M42.995 24.946c-27.87 14.98-28.576 15.953-29.987 14.52l-.193.125 2.768 2.776c2.84 2.848 2.293 2.07 27.976-11.62 7.056-3.785 11.677 10.489 4.374 17.81a12.914 12.914 0 0 1-9.154 3.81 12.922 12.922 0 0 1-9.154-3.81c-2.753-2.74-2.753-2.758-7.868 0l3.899 3.892a18.564 18.564 0 0 0 13.14 5.455c4.929 0 9.656-1.962 13.142-5.455 10.953-11.037 3.405-28.3-5.415-28.3-1.185.005-2.432.197-3.469.773M19.398.968c-2.519.005-5.01.502-7.334 1.463a19.15 19.15 0 0 0-6.209 4.138C-6.7 19.014 4.78 39.497 14.95 34.109c28.395-15.077 29.112-16.001 30.583-14.596l.198-.143-2.817-2.791c-2.887-2.863-2.331-2.063-28.448 11.698-7.174 3.788-11.874-10.56-4.448-17.92a13.166 13.166 0 0 1 4.27-2.835 13.243 13.243 0 0 1 14.348 2.834c2.798 2.756 2.798 2.774 8 0l-3.964-3.965A18.597 18.597 0 0 0 26.6 2.416C24.329 1.501 21.865.95 19.416.968"
-                />
-            </mask>
-            <g mask="url(#a)">
-                <mask
-                    id="b"
-                    width={115}
-                    height={115}
-                    x={-25}
-                    y={-25}
-                    maskUnits="userSpaceOnUse"
+            <defs>
+                <radialGradient
+                    id="f"
+                    cx={-3803.751}
+                    cy={4.899}
+                    r={13838.682}
+                    fx={-3803.751}
+                    fy={4.899}
+                    gradientUnits="userSpaceOnUse"
+                    spreadMethod="pad"
+                >
+                    <stop offset="0%" stopColor="#4FC8DA" />
+                    <stop offset="0%" stopColor="#28646D" />
+                    <stop offset="0%" />
+                    <stop offset="0%" stopColor="#7E6036" />
+                    <stop offset="0%" stopColor="#FDC16C" />
+                    <stop offset="4%" stopColor="#FDA2A1" />
+                    <stop offset="7%" stopColor="#FD84D6" />
+                    <stop offset="9%" stopColor="#FDA2A1" />
+                    <stop offset="11%" stopColor="#FDC16C" />
+                    <stop offset="14%" stopColor="#FDE03D" />
+                    <stop offset="17%" stopColor="#FCFF0E" />
+                    <stop offset="19%" stopColor="#9BF083" />
+                    <stop offset="21%" stopColor="#39E1F8" />
+                    <stop offset="23%" stopColor="#53F0F2" />
+                    <stop offset="25%" stopColor="#6CFFEC" />
+                    <stop offset="28%" stopColor="#53F0F2" />
+                    <stop offset="31%" stopColor="#39E1F8" />
+                    <stop offset="34%" stopColor="#4ABBFB" />
+                    <stop offset="37%" stopColor="#5B95FF" />
+                    <stop offset="40%" stopColor="#7494FE" />
+                    <stop offset="43%" stopColor="#8D93FD" />
+                    <stop offset="46%" stopColor="#B48AF6" />
+                    <stop offset="49%" stopColor="#DB81EE" />
+                    <stop offset="52%" stopColor="#D581EF" />
+                    <stop offset="55%" stopColor="#CF81F0" />
+                    <stop offset="58%" stopColor="#E77EF0" />
+                    <stop offset="60%" stopColor="#FF7BF0" />
+                    <stop offset="64%" stopColor="#EE7FF1" />
+                    <stop offset="68%" stopColor="#DD83F3" />
+                    <stop offset="71%" stopColor="#EE96C8" />
+                    <stop offset="74%" stopColor="#FFA99D" />
+                    <stop offset="78%" stopColor="#FE95BC" />
+                    <stop offset="82%" stopColor="#FD81DB" />
+                    <stop offset="84%" stopColor="#FDA2A0" />
+                    <stop offset="86%" stopColor="#FDC466" />
+                    <stop offset="88%" stopColor="#FD9FA2" />
+                    <stop offset="90%" stopColor="#FE7ADF" />
+                    <stop offset="93%" stopColor="#FE9FA3" />
+                    <stop offset="94%" stopColor="#FFC368" />
+                    <stop offset="97%" stopColor="#FF9DA7" />
+                    <stop offset="100%" stopColor="#FF76E5" />
+                </radialGradient>
+                <radialGradient
+                    id="e"
+                    cx={-12134.35}
+                    cy={100.563}
+                    r={15230.942}
+                    fx={-12134.35}
+                    fy={100.563}
+                    gradientUnits="userSpaceOnUse"
+                    spreadMethod="pad"
+                >
+                    <stop offset="0%" stopColor="#4FC8DA" />
+                    <stop offset="0%" stopColor="#28646D" />
+                    <stop offset="0%" />
+                    <stop offset="0%" stopColor="#06806B" />
+                    <stop offset="0%" stopColor="#0CFFD5" />
+                    <stop offset="4%" stopColor="#25D6EA" />
+                    <stop offset="7%" stopColor="#3FAEFF" />
+                    <stop offset="11%" stopColor="#2BD6F1" />
+                    <stop offset="16%" stopColor="#16FEE4" />
+                    <stop offset="19%" stopColor="#41FEE8" />
+                    <stop offset="23%" stopColor="#6CFFEC" />
+                    <stop offset="27%" stopColor="#53F0F2" />
+                    <stop offset="31%" stopColor="#39E1F8" />
+                    <stop offset="34%" stopColor="#4ABBFB" />
+                    <stop offset="37%" stopColor="#5B95FF" />
+                    <stop offset="40%" stopColor="#7494FE" />
+                    <stop offset="43%" stopColor="#8D93FD" />
+                    <stop offset="46%" stopColor="#B48AF6" />
+                    <stop offset="49%" stopColor="#DB81EE" />
+                    <stop offset="51%" stopColor="#AEB9ED" />
+                    <stop offset="54%" stopColor="#81F0EC" />
+                    <stop offset="56%" stopColor="#C0B6EE" />
+                    <stop offset="59%" stopColor="#FF7BF0" />
+                    <stop offset="62%" stopColor="#BD9FF8" />
+                    <stop offset="64%" stopColor="#7BC2FF" />
+                    <stop offset="67%" stopColor="#ACA3F9" />
+                    <stop offset="69%" stopColor="#DD83F3" />
+                    <stop offset="73%" stopColor="#EE96C8" />
+                    <stop offset="77%" stopColor="#FFA99D" />
+                    <stop offset="80%" stopColor="#FE95BC" />
+                    <stop offset="82%" stopColor="#FD81DB" />
+                    <stop offset="84%" stopColor="#FDA2A0" />
+                    <stop offset="86%" stopColor="#FDC466" />
+                    <stop offset="90%" stopColor="#FEC467" />
+                    <stop offset="94%" stopColor="#FFC368" />
+                    <stop offset="97%" stopColor="#FF9DA7" />
+                    <stop offset="100%" stopColor="#FF76E5" />
+                </radialGradient>
+                <clipPath id="b">
+                    <path d="M0 0h1920v1080H0z" />
+                </clipPath>
+                <clipPath id="d">
+                    <path d="M0 0h1920v1080H0Z" />
+                </clipPath>
+                <mask id="c" mask-type="alpha">
+                    <use xlinkHref="#a" />
+                </mask>
+                <g
+                    id="a"
                     style={{
-                        maskType: "luminance",
+                        display: "block",
                     }}
                 >
                     <path
-                        fill="#fff"
-                        d="M16.521-24.111 89.09 48.624 48.207 89.475-24.36 16.74l40.883-40.851Z"
+                        fill="#7f7f7f"
+                        d="M1209.96 765.569a34.49 34.49 0 0 0 0 48.371l80.483 80.477a34.235 34.235 0 0 0 23.737 8.536 34.27 34.27 0 0 0 33.17-33.17 34.298 34.298 0 0 0-8.536-23.738l-80.483-80.476a34.49 34.49 0 0 0-48.372 0z"
                     />
-                </mask>
-                <g mask="url(#b)">
                     <path
-                        fill="#fff"
-                        d="M89.09 48.624 48.206 89.475-24.361 16.74l40.882-40.851L89.09 48.624Z"
+                        fill="#7f7f7f"
+                        d="M1131.888 457.544C791.349 640.452 782.727 652.33 765.482 634.838l-2.365 1.514 33.833 33.9c34.698 34.765 28.018 25.265 341.832-141.88 86.211-46.214 142.683 128.065 53.45 217.466a157.82 157.82 0 0 1-51.3 34.416 157.773 157.773 0 0 1-60.558 12.093 157.74 157.74 0 0 1-60.552-12.093 157.92 157.92 0 0 1-51.306-34.416c-33.626-33.472-33.626-33.686-96.127 0l47.634 47.508c42.597 42.65 100.348 66.601 160.565 66.601s117.975-23.951 160.572-66.601c133.84-134.751 41.605-345.524-66.166-345.524-14.479.06-29.714 2.399-42.383 9.427M843.56 164.794a235.78 235.78 0 0 0-89.615 17.855c-28.393 11.73-54.174 28.902-75.86 50.522-153.424 151.956-13.152 402.035 111.12 336.258 346.95-184.081 355.714-195.37 373.689-178.219l2.412-1.742-34.41-34.081c-35.287-34.952-28.487-25.184-347.607 142.837-87.665 46.242-145.095-128.942-54.354-218.812a160.891 160.891 0 0 1 52.17-34.604 161.929 161.929 0 0 1 61.577-12.153c21.131 0 42.06 4.127 61.577 12.153 19.516 8.027 37.257 19.785 52.177 34.604 34.189 33.646 34.189 33.867 97.749 0L1005.746 231a227.241 227.241 0 0 0-74.2-48.532c-27.722-11.175-57.838-17.895-87.765-17.674"
                     />
+                </g>
+            </defs>
+            <g clipPath="url(#b)" transform="translate(-610.842 -164.789)">
+                <g
+                    mask="url(#c)"
+                    style={{
+                        display: "block",
+                    }}
+                >
+                    <g
+                        clipPath="url(#d)"
+                        transform="rotate(45.044 574.73 904.078) scale(.65362)"
+                    >
+                        <g
+                            style={{
+                                display: "block",
+                            }}
+                        >
+                            <path
+                                fill="url(#e)"
+                                d="M960-540V540H-960V-540z"
+                                style={{
+                                    fill: "url(#e)",
+                                }}
+                                transform="translate(960 540)"
+                            />
+                        </g>
+                    </g>
                 </g>
             </g>
         </svg>

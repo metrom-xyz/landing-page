@@ -13,6 +13,9 @@ const config: Config = {
             borderRadius: {
                 "4xl": "1.875rem",
             },
+            backgroundImage: {
+                planet: "url('/illustrations/quickstart-illustration.png')",
+            },
         },
     },
     plugins: [],
