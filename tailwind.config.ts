@@ -13,6 +13,11 @@ const config: Config = {
             borderRadius: {
                 "4xl": "1.875rem",
             },
+            backgroundImage: {
+                article1: "url('/article-graphic01.svg')",
+                article2: "url('/article-graphic02.svg')",
+                article3: "url('/article-graphic03.svg')",
+            },
         },
     },
     plugins: [],

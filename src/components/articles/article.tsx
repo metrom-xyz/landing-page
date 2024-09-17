@@ -4,14 +4,17 @@ import { useTranslations } from "next-intl";
 interface ArticleProps {
     title: string;
     link: string;
+    bgClassName: string;
 }
 
-export function Article({ title, link }: ArticleProps) {
+export function Article({ title, link, bgClassName }: ArticleProps) {
     const t = useTranslations("articles");
 
     return (
         <a href={link} target="_blank" rel="noopener noreferrer">
-            <div className="w-full md:w-fit min-h-[344px] md:min-h-[500px] max-w-[413px] flex flex-col items-center text-center gap-8 p-10 bg-white rounded-2xl duration-200 ease-in-out transition-colors hover:bg-gray-200">
+            <div
+                className={`bg-white w-full md:w-fit min-h-[344px] md:min-h-[500px] max-w-[413px] flex flex-col items-center text-center gap-8 p-10 rounded-2xl bg-bottom bg-no-repeat ${bgClassName}`}
+            >
                 <Typography
                     variant="lg"
                     uppercase

@@ -60,7 +60,7 @@ export function Footer() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Icon />
+                            <Icon className="text-gray-600 hover:text-black transition-colors duration-200 ease-out" />
                         </a>
                     ))}
                 </div>
@@ -81,7 +81,7 @@ export function Footer() {
                     >
                         <Typography
                             weight="medium"
-                            className={`${index > 0 && "text-gray-600"}`}
+                            className="text-gray-600 hover:text-black transition-colors duration-200 ease-out"
                         >
                             {t(link.text)}
                         </Typography>
