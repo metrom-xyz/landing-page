@@ -16,7 +16,7 @@ export function Article({ title, link }: ArticleProps) {
                     variant="lg"
                     uppercase
                     weight="medium"
-                    className="text-gray-600"
+                    className="text-gray-600 leading-none"
                 >
                     {t("title")}
                 </Typography>
