@@ -11,7 +11,7 @@ export function Step({ number, title, description }: StepProps) {
         <div className="w-full h-full flex flex-col gap-4 p-3 bg-gray-100 rounded-2xl">
             <div className="flex items-center gap-5">
                 <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-white">
-                    <Typography variant="xl2" weight="medium">
+                    <Typography weight="medium" className="text-xl2">
                         {number}.
                     </Typography>
                 </div>
