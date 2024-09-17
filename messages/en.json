@@ -44,29 +44,31 @@
     "faqs": {
         "metrom": {
             "title": "What is Metrom?",
-            "text": "Metrom is a platform designed for AMMs and projects to create efficient incentive structures for liquidity providers. It allows campaign creators to set up multiple campaigns and reward up to five tokens per campaign, all in a single transaction. The process is streamlined into four steps that can be completed in under a minute."
+            "text": "Metrom is a flexible liquidity mining platform designed to help AMMs and projects efficiently launch and manage multiple incentivization campaigns. With a focus on security, ease of use and efficiency, Metrom enables projects to create campaigns quickly, with minimal leakage, while optimizing rewards for liquidity providers."
         },
-        "incentives": {
-            "title": "What are Efficiency incentives?",
-            "text": "Efficiency incentives are rewards structures designed to achieve the desired TVL within a specified range, without leaking unnecessary rewards. They ensure that liquidity is provided where it is most needed without over-incentivizing, thus preventing reward leakage and maximizing the effectiveness of the incentives."
+        "differences": {
+            "title": "How are we different from others?",
+            "text1": "Metrom's key differentiator is its <bold>KPI-based incentivization</bold>, which ensures that rewards are distributed based on TVL performance metrics that matter most to your liquidity needs. Unlike traditional farming, where rewards may be misallocated or diluted, Metrom’s KPI-driven approach focuses rewards on specific targets, optimizing the impact of each campaign.",
+            "text2": "Additionally, Metrom allows you to launch multiple campaigns with multiple rewards in a single transaction, saving time and reducing complexity. By using off-chain computations, it further enhances accuracy and frequency in reward distribution, significantly improving the overall experience for campaign creators and liquidity providers."
         },
         "campaigns": {
-            "title": "How to create an Incentive Campaign?",
-            "text1": "To create an incentive campaign, go to <link>metrom.xyz.app</link> and follow these four simple steps:",
-            "text2": "Select the pair you want to incentivize.",
-            "text3": "Set the campaign duration.",
-            "text4": "Specify the amount and type of rewards tokens.",
-            "text5": "Launch the campaign."
-        },
-        "providers": {
-            "title": "What Metrom offers to Liquidity Providers?",
-            "text1": "Metrom provides liquidity providers with the ability to:",
-            "text2": "Compare APRs across different pools.",
-            "text3": "Claim rewards from your Metrom dashboard."
+            "title": "How do I create a campaign?",
+            "text1": "Creating a campaign on Metrom is simple:",
+            "text2": "Select your DEX and liquidity pair.",
+            "text3": "Add your reward tokens and set your campaign duration.",
+            "text4": "Launch the campaign—all in under a minute.",
+            "text5": "For a more in-depth guide, you can watch the tutorial video or read our <link>GitBook here</link>."
         },
         "tokens": {
-            "title": "How to whitelist a reward token?",
-            "text1": "To whitelist your token, submit an issue with all the required token details <link>on our GitHub</link>."
+            "title": "How do I whitelist a reward token?",
+            "text1": "You can whitelist a reward token by simply going to the Metrom's <link>GitHub repository</link> and create a ticket by filling the form with the details.",
+            "text2": "The process typically takes 24 to 48 hours, after which the token will be approved for campaigns.",
+            "text3": "Alternatively, you can visit our Discord and open a support ticket in the 'help-zone' channel."
+        },
+        "amms": {
+            "title": "How can Metrom support your AMM?",
+            "text1": "Metrom enhances your AMM by making campaign creation and management seamless and cost-effective. With our streamlined UI, you can easily launch multiple campaigns in a single transaction, reducing time and effort.",
+            "text2": "Once your campaigns are live, Metrom’s KPI-based and range-targeted incentives attract liquidity efficiently and help retain it over time, maximizing the overall impact of your campaigns."
         }
     },
     "articles": {

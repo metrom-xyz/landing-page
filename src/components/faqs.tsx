@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Typography } from "@metrom-xyz/ui";
-import { APP_LINK, GITHUB_ISSUES_LINK } from "@/common";
+import { APP_LINK, DOCUMENTATION_LINK, GITHUB_ISSUES_LINK } from "@/common";
 import { Accordion } from "./ui/accordion";
 
 const FAQS: { title: string; body: string | ReactNode }[] = [
@@ -12,22 +12,39 @@ const FAQS: { title: string; body: string | ReactNode }[] = [
         body: "metrom.text",
     },
     {
-        title: "incentives.title",
-        body: "incentives.text",
+        title: "differences.title",
+        body: <Differences />,
     },
     {
         title: "campaigns.title",
         body: <Campaigns />,
     },
     {
-        title: "providers.title",
-        body: <Providers />,
-    },
-    {
         title: "tokens.title",
         body: <Tokens />,
     },
+    {
+        title: "amms.title",
+        body: <Amms />,
+    },
 ];
+
+export function Differences() {
+    const t = useTranslations("faqs");
+
+    return (
+        <div className="flex flex-col gap-3">
+            <Typography variant="lg" className="leading-normal">
+                {t.rich("differences.text1", {
+                    bold: (chunks) => <b>{chunks}</b>,
+                })}
+            </Typography>
+            <Typography variant="lg" className="leading-normal">
+                {t("differences.text2")}
+            </Typography>
+        </div>
+    );
+}
 
 export function Campaigns() {
     const t = useTranslations("faqs");
@@ -36,11 +53,10 @@ export function Campaigns() {
         "campaigns.text2",
         "campaigns.text3",
         "campaigns.text4",
-        "campaigns.text5",
     ] as const;
 
     return (
-        <div>
+        <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
                 {t.rich("campaigns.text1", {
                     link: (chunks) => (
@@ -64,30 +80,35 @@ export function Campaigns() {
                     </li>
                 ))}
             </ol>
+            <Typography variant="lg" className="leading-normal">
+                {t.rich("campaigns.text5", {
+                    link: (chunks) => (
+                        <a
+                            href={`${DOCUMENTATION_LINK}/creating-a-campaign`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="leading-normal text-brand-blue font-medium"
+                        >
+                            {chunks}
+                        </a>
+                    ),
+                })}
+            </Typography>
         </div>
     );
 }
 
-export function Providers() {
+export function Amms() {
     const t = useTranslations("faqs");
 
     return (
-        <div>
+        <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
-                {t("providers.text1")}
+                {t("amms.text1")}
             </Typography>
-            <ol className="list-decimal ml-5">
-                <li>
-                    <Typography variant="lg" className="leading-normal">
-                        {t("providers.text2")}
-                    </Typography>
-                </li>
-                <li>
-                    <Typography variant="lg" className="leading-normal">
-                        {t("providers.text3")}
-                    </Typography>
-                </li>
-            </ol>
+            <Typography variant="lg" className="leading-normal">
+                {t("amms.text2")}
+            </Typography>
         </div>
     );
 }
@@ -96,7 +117,7 @@ export function Tokens() {
     const t = useTranslations("faqs");
 
     return (
-        <div className="flex flex-col md:flex-row gap-1">
+        <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
                 {t.rich("tokens.text1", {
                     link: (chunks) => (
@@ -110,6 +131,12 @@ export function Tokens() {
                         </a>
                     ),
                 })}
+            </Typography>
+            <Typography variant="lg" className="leading-normal">
+                {t("tokens.text2")}
+            </Typography>
+            <Typography variant="lg" className="leading-normal">
+                {t("tokens.text3")}
             </Typography>
         </div>
     );
