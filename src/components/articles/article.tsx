@@ -23,9 +23,9 @@ export function Article({ title, link, bgClassName }: ArticleProps) {
                 >
                     {t("title")}
                 </Typography>
-                <Typography className="text-4xl md:text-xl5 font-semibold flex-1 leading-none">
+                <h2 className="text-4xl md:text-xl5 font-sans font-semibold flex-1 leading-none">
                     {title}
-                </Typography>
+                </h2>
                 <Button className={{ root: "pointer-events-none" }}>
                     {t("read")}
                 </Button>

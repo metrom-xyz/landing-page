@@ -12,7 +12,7 @@ import "@metrom-xyz/ui/style.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Maximize your Liquidity Mining Impact with Precision Incentives",
+    title: "Maximize Liquidity Mining with Precision Incentives",
     description:
         "Metrom is a flexible liquidity mining platform designed to help AMMs and projects efficiently launch and manage multiple incentivisation campaigns.",
     alternates: {

@@ -1,7 +1,6 @@
 "use client";
 
 import { ChrevronDownIcon } from "@/app/assets/chevron-down-icon";
-import { Typography } from "@metrom-xyz/ui";
 import { ReactNode, useState } from "react";
 
 interface AccordionProps {
@@ -22,9 +21,9 @@ export function Accordion({ title, children }: AccordionProps) {
                 onClick={handleOnToggleOpen}
                 className="flex items-center justify-between w-full p-6 select-none cursor-pointer rounded-2xl duration-200 ease-in-out transition-colors hover:bg-gray-200"
             >
-                <Typography variant="xl" weight="medium">
+                <h5 className="font-medium font-sans text-xl leading-7">
                     {title}
-                </Typography>
+                </h5>
                 <ChrevronDownIcon
                     className={`${open ? "rotate-180" : ""} w-3 h-3`}
                 />

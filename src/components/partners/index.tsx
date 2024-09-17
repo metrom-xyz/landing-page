@@ -11,7 +11,7 @@ import { Algebra } from "@/app/assets/logos/algebra";
 import { Mantle } from "@/app/assets/logos/mantle";
 import { ParnersGroup } from "./parters-group";
 import { Partner } from "./partner";
-import { Button, Typography } from "@metrom-xyz/ui";
+import { Button } from "@metrom-xyz/ui";
 import { Hats } from "@/app/assets/logos/hats";
 import { DISCORD_LINK } from "@/common";
 import { OxCommit } from "@/app/assets/logos/0x-commit";
@@ -68,9 +68,9 @@ export function Partners() {
 
     return (
         <section className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 bg-white rounded-4xl">
-            <Typography className="text-4xl font-semibold text-center">
+            <h3 className="font-sans leading-10 text-4xl font-semibold text-center">
                 {t("title")}
-            </Typography>
+            </h3>
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 flex-wrap">
                 <ParnersGroup title={t("chains")}>
                     {CHAINS.map((chain) => (

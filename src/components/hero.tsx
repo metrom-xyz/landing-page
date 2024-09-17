@@ -17,13 +17,9 @@ export function Hero() {
             >
                 {t("title")}
             </Typography>
-            <Typography
-                variant="xl2"
-                weight="medium"
-                className="max-w-[600px] text-gray-600"
-            >
+            <h2 className="text-xl2 leading-8 max-w-[600px] font-medium font-sans text-gray-600">
                 {t("description")}
-            </Typography>
+            </h2>
             <div className="flex w-full md:w-fit gap-3">
                 <Button
                     href={APP_LINK}
