@@ -1,5 +1,6 @@
 "use client";
 
+import { Dictionary } from "@/types";
 import { Article } from "./article";
 
 const ARTICLES = [
@@ -20,7 +21,11 @@ const ARTICLES = [
     },
 ];
 
-export function Articles() {
+export interface ArticlesProps {
+    dictionary: Dictionary["articles"];
+}
+
+export function Articles({ dictionary }: ArticlesProps) {
     return (
         <div className="flex gap-5 justify-center flex-wrap">
             {ARTICLES.map((article, index) => (
@@ -29,6 +34,7 @@ export function Articles() {
                     title={article.title}
                     link={article.link}
                     bgClassName={article.bacgroundImage}
+                    dictionary={dictionary}
                 />
             ))}
         </div>
