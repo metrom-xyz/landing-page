@@ -79,7 +79,6 @@
         "read": "Read now"
     },
     "footer": {
-        "byCarrot": "© {year} Made with love by Carrot Labs",
         "socials": {
             "github": "Github",
             "x": "Follow us on X",
