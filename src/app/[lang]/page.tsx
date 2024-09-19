@@ -3,7 +3,7 @@ import { Features } from "@/components/features";
 import { Partners } from "@/components/partners";
 import { Articles } from "@/components/articles";
 import { Faqs } from "@/components/faqs";
-import { Footer } from "@/components/foooter";
+import { Footer } from "@/components/footer";
 import { getDictionary } from "../../dictionaries";
 
 export default async function Home({
