@@ -51,7 +51,7 @@ export function Footer({ dictionary }: FooterProps) {
     ];
 
     return (
-        <footer className="w-full flex flex-col-reverse items-center gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
+        <footer className="w-full flex flex-col items-center md:items-start gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
             <div className="flex flex-col gap-11 md:gap-20">
                 <div className="flex items-center justify-center gap-11">
                     {SOCIALS.map(({ icon: Icon, link, text }, index) => (
@@ -65,9 +65,6 @@ export function Footer({ dictionary }: FooterProps) {
                             <Icon className="text-gray-600 hover:text-black transition-colors duration-200 ease-out" />
                         </a>
                     ))}
-                </div>
-                <div className="flex flex-col gap-2">
-                    <Metrom className="max-w-60" />
                 </div>
             </div>
             <div className="h-full flex flex-col gap-3 text-center md:text-left">
@@ -86,6 +83,7 @@ export function Footer({ dictionary }: FooterProps) {
                         </Typography>
                     </a>
                 ))}
+                <Metrom className="max-w-48 mt-10 md:mt-0" />
             </div>
         </footer>
     );
