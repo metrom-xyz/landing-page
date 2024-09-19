@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { BASE_URL } from "@/common";
+import { i18n } from "@/i18n-config";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-    return [{ lang: "en-US" }];
+    return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
 export default async function RootLayout({
