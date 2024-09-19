@@ -1,15 +1,19 @@
 import { Button, Typography } from "@metrom-xyz/ui";
-import { useTranslations } from "next-intl";
+import { ArticlesProps } from ".";
 
 interface ArticleProps {
     title: string;
     link: string;
     bgClassName: string;
+    dictionary: ArticlesProps["dictionary"];
 }
 
-export function Article({ title, link, bgClassName }: ArticleProps) {
-    const t = useTranslations("articles");
-
+export function Article({
+    title,
+    link,
+    bgClassName,
+    dictionary,
+}: ArticleProps) {
     return (
         <a href={link} target="_blank" rel="noopener noreferrer">
             <div
@@ -21,13 +25,13 @@ export function Article({ title, link, bgClassName }: ArticleProps) {
                     weight="medium"
                     className="text-gray-600 leading-none"
                 >
-                    {t("title")}
+                    {dictionary.title}
                 </Typography>
                 <h2 className="text-4xl md:text-xl5 font-sans font-semibold flex-1 leading-none">
                     {title}
                 </h2>
                 <Button className={{ root: "pointer-events-none" }}>
-                    {t("read")}
+                    {dictionary.read}
                 </Button>
             </div>
         </a>

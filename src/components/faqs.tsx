@@ -1,95 +1,62 @@
 "use client";
 
 import { ReactNode } from "react";
-import { useTranslations } from "next-intl";
 import { Typography } from "@metrom-xyz/ui";
-import { APP_LINK, DOCUMENTATION_LINK, GITHUB_ISSUES_LINK } from "@/common";
+import { DOCUMENTATION_LINK, GITHUB_ISSUES_LINK } from "@/common";
 import { Accordion } from "./ui/accordion";
+import { Dictionary } from "@/types";
+import { interpolate } from "@/utils";
 
-const FAQS: { title: string; body: string | ReactNode }[] = [
-    {
-        title: "metrom.title",
-        body: "metrom.text",
-    },
-    {
-        title: "differences.title",
-        body: <Differences />,
-    },
-    {
-        title: "campaigns.title",
-        body: <Campaigns />,
-    },
-    {
-        title: "tokens.title",
-        body: <Tokens />,
-    },
-    {
-        title: "amms.title",
-        body: <Amms />,
-    },
-];
+interface FaqsProps {
+    dictionary: Dictionary["faqs"];
+}
 
-export function Differences() {
-    const t = useTranslations("faqs");
-
+export function Differences({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
-                {t.rich("differences.text1", {
-                    bold: (chunks) => <b>{chunks}</b>,
+                {interpolate(dictionary.differences.text1, {
+                    boldText: <b>{dictionary.differences.text1Bold}</b>,
                 })}
             </Typography>
             <Typography variant="lg" className="leading-normal">
-                {t("differences.text2")}
+                {dictionary.differences.text2}
             </Typography>
         </div>
     );
 }
 
-export function Campaigns() {
-    const t = useTranslations("faqs");
-
+export function Campaigns({ dictionary }: FaqsProps) {
     const steps = [
-        "campaigns.text2",
-        "campaigns.text3",
-        "campaigns.text4",
+        dictionary.campaigns.text2,
+        dictionary.campaigns.text3,
+        dictionary.campaigns.text4,
     ] as const;
 
     return (
         <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
-                {t.rich("campaigns.text1", {
-                    link: (chunks) => (
-                        <a
-                            href={APP_LINK}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="leading-normal text-brand-blue font-medium"
-                        >
-                            {chunks}
-                        </a>
-                    ),
-                })}
+                {dictionary.campaigns.text1}
             </Typography>
             <ol className="list-decimal ml-5">
                 {steps.map((step, index) => (
                     <li key={index}>
                         <Typography variant="lg" className="leading-normal">
-                            {t(step)}
+                            {step}
                         </Typography>
                     </li>
                 ))}
             </ol>
             <Typography variant="lg" className="leading-normal">
-                {t.rich("campaigns.text5", {
-                    link: (chunks) => (
+                {interpolate(dictionary.campaigns.text5, {
+                    linkText: (
                         <a
                             href={`${DOCUMENTATION_LINK}/creating-a-campaign`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="leading-normal text-brand-blue font-medium"
                         >
-                            {chunks}
+                            {dictionary.campaigns.text5Link}
                         </a>
                     ),
                 })}
@@ -98,60 +65,81 @@ export function Campaigns() {
     );
 }
 
-export function Amms() {
-    const t = useTranslations("faqs");
-
+export function Tokens({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
-                {t("amms.text1")}
-            </Typography>
-            <Typography variant="lg" className="leading-normal">
-                {t("amms.text2")}
-            </Typography>
-        </div>
-    );
-}
-
-export function Tokens() {
-    const t = useTranslations("faqs");
-
-    return (
-        <div className="flex flex-col gap-3">
-            <Typography variant="lg" className="leading-normal">
-                {t.rich("tokens.text1", {
-                    link: (chunks) => (
+                {interpolate(dictionary.tokens.text1, {
+                    linkText: (
                         <a
                             href={GITHUB_ISSUES_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="leading-normal text-brand-blue font-medium"
                         >
-                            {chunks}
+                            {dictionary.tokens.text1Link}
                         </a>
                     ),
                 })}
             </Typography>
             <Typography variant="lg" className="leading-normal">
-                {t("tokens.text2")}
+                {dictionary.tokens.text2}
             </Typography>
             <Typography variant="lg" className="leading-normal">
-                {t("tokens.text3")}
+                {dictionary.tokens.text3}
             </Typography>
         </div>
     );
 }
 
-export function Faqs() {
-    const t = useTranslations("faqs");
+export function Amms({ dictionary }: FaqsProps) {
+    return (
+        <div className="flex flex-col gap-3">
+            <Typography variant="lg" className="leading-normal">
+                {dictionary.amms.text1}
+            </Typography>
+            <Typography variant="lg" className="leading-normal">
+                {dictionary.amms.text2}
+            </Typography>
+        </div>
+    );
+}
+
+interface FaqsProps {
+    dictionary: Dictionary["faqs"];
+}
+
+export function Faqs({ dictionary }: FaqsProps) {
+    const FAQS: { title: string; body: string | ReactNode }[] = [
+        {
+            title: dictionary.metrom.title,
+            body: dictionary.metrom.text,
+        },
+        {
+            title: dictionary.differences.title,
+            body: <Differences dictionary={dictionary} />,
+        },
+        {
+            title: dictionary.campaigns.title,
+            body: <Campaigns dictionary={dictionary} />,
+        },
+        {
+            title: dictionary.tokens.title,
+            body: <Tokens dictionary={dictionary} />,
+        },
+        {
+            title: dictionary.amms.title,
+            body: <Amms dictionary={dictionary} />,
+        },
+    ];
 
     return (
         <div className="w-full flex flex-col gap-1 md:px-28">
             {FAQS.map(({ title, body }, index) => (
-                <Accordion key={index} title={t(title)}>
+                <Accordion key={index} title={title}>
                     {typeof body === "string" ? (
                         <Typography variant="lg" className="leading-normal">
-                            {t(body)}
+                            {body}
                         </Typography>
                     ) : (
                         body

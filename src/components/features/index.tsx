@@ -1,30 +1,32 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { EfficientIcon } from "@/app/assets/efficient-icon";
 import { RealtimeIcon } from "@/app/assets/realtime-icon";
 import { ShieldIcon } from "@/app/assets/shield-icon";
 import { Feature } from "./feature";
+import type { Dictionary } from "@/types";
 
-export function Features() {
-    const t = useTranslations("features");
+interface FeaturesProps {
+    dictionary: Dictionary["features"];
+}
 
+export function Features({ dictionary }: FeaturesProps) {
     return (
         <div className="flex flex-col md:flex-row items-center gap-20 md:px-28">
             <Feature
                 icon={EfficientIcon}
-                title={t("efficient.title")}
-                description={t("efficient.description")}
+                title={dictionary.efficient.title}
+                description={dictionary.efficient.description}
             />
             <Feature
                 icon={RealtimeIcon}
-                title={t("simple.title")}
-                description={t("simple.description")}
+                title={dictionary.simple.title}
+                description={dictionary.simple.description}
             />
             <Feature
                 icon={ShieldIcon}
-                title={t("kpi.title")}
-                description={t("kpi.description")}
+                title={dictionary.kpi.title}
+                description={dictionary.kpi.description}
             />
         </div>
     );

@@ -12,41 +12,43 @@ import {
     TELEGRAM_LINK,
     X_ACCOUNT_LINK,
 } from "@/common";
+import { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
-import { useTranslations } from "next-intl";
 
-const SOCIALS = [
-    {
-        text: "socials.github",
-        icon: Github,
-        link: GITHUB_LINK,
-    },
-    { text: "socials.x", icon: X, link: X_ACCOUNT_LINK },
-    { text: "socials.discord", icon: Discord, link: DISCORD_LINK },
-    {
-        text: "socials.telegram",
-        icon: Telegram,
-        link: TELEGRAM_LINK,
-    },
-];
+interface FooterProps {
+    dictionary: Dictionary["footer"];
+}
 
-const LINKS = [
-    {
-        text: "links.support",
-        link: DISCORD_LINK,
-    },
-    {
-        text: "links.documentation",
-        link: DOCUMENTATION_LINK,
-    },
-    {
-        text: "links.contact",
-        link: "mailto:hello@metrom.xyz",
-    },
-];
+export function Footer({ dictionary }: FooterProps) {
+    const SOCIALS = [
+        {
+            text: dictionary.socials.github,
+            icon: Github,
+            link: GITHUB_LINK,
+        },
+        { text: dictionary.socials.x, icon: X, link: X_ACCOUNT_LINK },
+        { text: dictionary.socials.discord, icon: Discord, link: DISCORD_LINK },
+        {
+            text: dictionary.socials.telegram,
+            icon: Telegram,
+            link: TELEGRAM_LINK,
+        },
+    ];
 
-export function Footer() {
-    const t = useTranslations("footer");
+    const LINKS = [
+        {
+            text: dictionary.links.support,
+            link: DISCORD_LINK,
+        },
+        {
+            text: dictionary.links.documentation,
+            link: DOCUMENTATION_LINK,
+        },
+        {
+            text: dictionary.links.contact,
+            link: "mailto:hello@metrom.xyz",
+        },
+    ];
 
     return (
         <footer className="w-full flex flex-col-reverse items-center gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
@@ -56,7 +58,7 @@ export function Footer() {
                         <a
                             key={index}
                             href={link}
-                            aria-label={t(text)}
+                            aria-label={text}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -66,9 +68,6 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col gap-2">
                     <Metrom className="max-w-60" />
-                    <Typography variant="sm" className="text-gray-600">
-                        {t("byCarrot", { year: new Date().getFullYear() })}
-                    </Typography>
                 </div>
             </div>
             <div className="h-full flex flex-col gap-3 text-center md:text-left">
@@ -83,7 +82,7 @@ export function Footer() {
                             weight="medium"
                             className="text-gray-600 hover:text-black transition-colors duration-200 ease-out"
                         >
-                            {t(link.text)}
+                            {link.text}
                         </Typography>
                     </a>
                 ))}

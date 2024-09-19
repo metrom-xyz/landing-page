@@ -48,7 +48,8 @@
         },
         "differences": {
             "title": "How are we different from others?",
-            "text1": "Metrom's key differentiator is its <bold>KPI-based incentivization</bold>, which ensures that rewards are distributed based on TVL performance metrics that matter most to your liquidity needs. Unlike traditional farming, where rewards may be misallocated or diluted, Metrom’s KPI-driven approach focuses rewards on specific targets, optimizing the impact of each campaign.",
+            "text1": "Metrom's key differentiator is its {{boldText}}, which ensures that rewards are distributed based on TVL performance metrics that matter most to your liquidity needs. Unlike traditional farming, where rewards may be misallocated or diluted, Metrom’s KPI-driven approach focuses rewards on specific targets, optimizing the impact of each campaign.",
+            "text1Bold": "KPI-based Incentivisation",
             "text2": "Additionally, Metrom allows you to launch multiple campaigns with multiple rewards in a single transaction, saving time and reducing complexity. By using off-chain computations, it further enhances accuracy and frequency in reward distribution, significantly improving the overall experience for campaign creators and liquidity providers."
         },
         "campaigns": {
@@ -57,11 +58,13 @@
             "text2": "Select your DEX and liquidity pair.",
             "text3": "Add your reward tokens and set your campaign duration.",
             "text4": "Launch the campaign—all in under a minute.",
-            "text5": "For a more in-depth guide, you can watch the tutorial video or read our <link>GitBook here</link>."
+            "text5": "For a more in-depth guide, you can watch the tutorial video or read our {{linkText}}.",
+            "text5Link": "GitBook here"
         },
         "tokens": {
             "title": "How do I whitelist a reward token?",
-            "text1": "You can whitelist a reward token by simply going to the Metrom's <link>GitHub repository</link> and create a ticket by filling the form with the details.",
+            "text1": "You can whitelist a reward token by simply going to the Metrom's {{linkText}} and create a ticket by filling the form with the details.",
+            "text1Link": "GitHub repository",
             "text2": "The process typically takes 24 to 48 hours, after which the token will be approved for campaigns.",
             "text3": "Alternatively, you can visit our Discord and open a support ticket in the 'help-zone' channel."
         },

@@ -1,8 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { FunctionComponent } from "react";
-import { SVGIconProps } from "@/types";
+import { Dictionary, SVGIconProps } from "@/types";
 import { Base } from "@/app/assets/logos/base";
 import { Mode } from "@/app/assets/logos/mode";
 import { Kim } from "@/app/assets/logos/kim";
@@ -63,16 +62,18 @@ const AUDITORS: Partner[] = [
     },
 ];
 
-export function Partners() {
-    const t = useTranslations("partners");
+interface PartnersProps {
+    dictionary: Dictionary["partners"];
+}
 
+export function Partners({ dictionary }: PartnersProps) {
     return (
         <section className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 bg-white rounded-4xl">
             <h3 className="font-sans leading-10 text-4xl font-semibold text-center">
-                {t("title")}
+                {dictionary.title}
             </h3>
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 flex-wrap">
-                <ParnersGroup title={t("chains")}>
+                <ParnersGroup title={dictionary.chains}>
                     {CHAINS.map((chain) => (
                         <Partner
                             key={chain.name}
@@ -81,7 +82,7 @@ export function Partners() {
                         />
                     ))}
                 </ParnersGroup>
-                <ParnersGroup title={t("amms")}>
+                <ParnersGroup title={dictionary.amms}>
                     {AMMS.map((amm) => (
                         <Partner
                             key={amm.name}
@@ -90,7 +91,7 @@ export function Partners() {
                         />
                     ))}
                 </ParnersGroup>
-                <ParnersGroup title={t("auditors")}>
+                <ParnersGroup title={dictionary.auditors}>
                     {AUDITORS.map((auditor) => (
                         <Partner
                             key={auditor.name}
@@ -107,7 +108,7 @@ export function Partners() {
                 rel="noopener noreferrer"
                 className={{ root: "self-center" }}
             >
-                {t("add")}
+                {dictionary.add}
             </Button>
         </section>
     );

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
-import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
 import { BASE_URL } from "@/common";
 
 import "@fontsource/ibm-plex-sans/400.css";
@@ -32,22 +30,20 @@ export const metadata: Metadata = {
     ],
 };
 
+export async function generateStaticParams() {
+    return [{ lang: "en-US" }];
+}
+
 export default async function RootLayout({
     children,
-    params: { locale },
+    params: { lang },
 }: Readonly<{
     children: ReactNode;
-    params: { locale: string };
+    params: { lang: string };
 }>) {
-    const messages = await getMessages();
-
     return (
-        <html lang={locale} className="bg-gray-100 p-4 md:p-12">
-            <body>
-                <NextIntlClientProvider messages={messages}>
-                    {children}
-                </NextIntlClientProvider>
-            </body>
+        <html lang={lang} className="bg-gray-100 p-4 md:p-12">
+            <body>{children}</body>
         </html>
     );
 }
