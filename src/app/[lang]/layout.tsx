@@ -42,7 +42,7 @@ export default async function RootLayout({
     params: { lang: string };
 }>) {
     return (
-        <html lang={lang} className="bg-gray-100 p-4 md:p-12">
+        <html lang={lang} className="bg-gray-100 px-4 py-6 md:px-12 md:py-16">
             <body>{children}</body>
         </html>
     );
