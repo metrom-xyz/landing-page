@@ -63,10 +63,7 @@ export function Accordion({ title, children }: AccordionProps) {
                 {transition(
                     (styles, open) =>
                         open && (
-                            <animated.div
-                                style={styles}
-                                className="w-full px-6 pb-6"
-                            >
+                            <animated.div style={styles} className="w-full p-6">
                                 {children}
                             </animated.div>
                         ),
