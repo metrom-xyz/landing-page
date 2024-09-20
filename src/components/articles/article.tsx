@@ -33,20 +33,16 @@ export function Article({
             <h2 className="text-4xl md:text-xl5 font-sans font-semibold flex-1 leading-none z-10">
                 {title}
             </h2>
-            <a
+            <Button
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cursor-pointer z-10"
+                icon={ExternalIcon}
+                iconPlacement="right"
+                className={{ root: "z-10", icon: "h-3 w-3" }}
             >
-                <Button
-                    className={{ root: "pointer-events-none", icon: "h-3 w-3" }}
-                    icon={ExternalIcon}
-                    iconPlacement="right"
-                >
-                    {dictionary.read}
-                </Button>
-            </a>
+                {dictionary.read}
+            </Button>
         </div>
     );
 }

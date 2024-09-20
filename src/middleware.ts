@@ -34,6 +34,7 @@ export function middleware(request: NextRequest) {
                 `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
                 request.url,
             ),
+            308,
         );
     }
 }

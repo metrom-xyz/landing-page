@@ -66,7 +66,7 @@ export function Footer({ dictionary }: FooterProps) {
                         </a>
                     ))}
                 </div>
-                <Metrom className="max-w-48 mt-10 md:mt-0" />
+                <Metrom className="max-w-48" />
             </div>
             <div className="h-full flex flex-col gap-3 text-center md:text-left">
                 {LINKS.map((link, index) => (
