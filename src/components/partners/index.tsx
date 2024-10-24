@@ -15,6 +15,8 @@ import { Hats } from "@/app/assets/logos/hats";
 import { DISCORD_LINK } from "@/common";
 import { OxCommit } from "@/app/assets/logos/0x-commit";
 import { PlusSquareIcon } from "@/app/assets/plus-square-icon";
+import { Taiko } from "@/app/assets/logos/taiko";
+import { Panko } from "@/app/assets/logos/panko";
 
 interface Partner {
     name: string;
@@ -34,6 +36,10 @@ const CHAINS: Partner[] = [
         name: "Mantle",
         icon: Mantle,
     },
+    {
+        name: "Taiko",
+        icon: Taiko,
+    },
 ];
 
 const AMMS: Partner[] = [
@@ -48,6 +54,10 @@ const AMMS: Partner[] = [
     {
         name: "Algebra",
         icon: Algebra,
+    },
+    {
+        name: "Panko",
+        icon: Panko,
     },
 ];
 
