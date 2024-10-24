@@ -38,11 +38,12 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({
     children,
-    params: { lang },
+    params,
 }: Readonly<{
     children: ReactNode;
-    params: { lang: string };
+    params: Promise<{ lang: string }>;
 }>) {
+    const { lang } = await params;
     return (
         <html lang={lang} className="bg-gray-100 px-4 py-6 md:px-12 md:py-16">
             <body>{children}</body>
