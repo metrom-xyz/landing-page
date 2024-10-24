@@ -7,10 +7,11 @@ import { Footer } from "@/components/footer";
 import { getDictionary } from "../../dictionaries";
 
 export default async function Home({
-    params: { lang },
+    params,
 }: {
-    params: { lang: string };
+    params: Promise<{ lang: string }>;
 }) {
+    const { lang } = await params;
     const dictionary = await getDictionary(lang);
 
     return (
