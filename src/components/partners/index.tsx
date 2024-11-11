@@ -17,6 +17,8 @@ import { OxCommit } from "@/app/assets/logos/0x-commit";
 import { PlusSquareIcon } from "@/app/assets/plus-square-icon";
 import { Taiko } from "@/app/assets/logos/taiko";
 import { Panko } from "@/app/assets/logos/panko";
+import { Scroll } from "@/app/assets/logos/scroll";
+import { Scribe } from "@/app/assets/logos/scribe";
 
 interface Partner {
     name: string;
@@ -40,9 +42,13 @@ const CHAINS: Partner[] = [
         name: "Taiko",
         icon: Taiko,
     },
+    {
+        name: "Scroll",
+        icon: Scroll,
+    },
 ];
 
-const AMMS: Partner[] = [
+const DEXES: Partner[] = [
     {
         name: "Kim",
         icon: Kim,
@@ -58,6 +64,10 @@ const AMMS: Partner[] = [
     {
         name: "Panko",
         icon: Panko,
+    },
+    {
+        name: "Scribe",
+        icon: Scribe,
     },
 ];
 
@@ -92,8 +102,8 @@ export function Partners({ dictionary }: PartnersProps) {
                         />
                     ))}
                 </ParnersGroup>
-                <ParnersGroup title={dictionary.amms}>
-                    {AMMS.map((amm) => (
+                <ParnersGroup title={dictionary.dexes}>
+                    {DEXES.map((amm) => (
                         <Partner
                             key={amm.name}
                             icon={amm.icon}
