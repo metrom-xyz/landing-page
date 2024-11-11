@@ -22,7 +22,7 @@
     "partners": {
         "title": "Partners",
         "chains": "Chains",
-        "amms": "AMMs",
+        "dexes": "DEXes",
         "auditors": "Audits",
         "add": "Partner with Us"
     },
@@ -44,7 +44,7 @@
     "faqs": {
         "metrom": {
             "title": "What is Metrom?",
-            "text": "Metrom is a flexible liquidity mining platform designed to help AMMs and projects efficiently launch and manage multiple incentivization campaigns. With a focus on security, ease of use and efficiency, Metrom enables projects to create campaigns quickly, with minimal leakage, while optimizing rewards for liquidity providers."
+            "text": "Metrom is a flexible liquidity mining platform designed to help DEXes and projects efficiently launch and manage multiple incentivization campaigns. With a focus on security, ease of use and efficiency, Metrom enables projects to create campaigns quickly, with minimal leakage, while optimizing rewards for liquidity providers."
         },
         "differences": {
             "title": "How are we different from others?",
@@ -68,10 +68,10 @@
             "text2": "The process typically takes 24 to 48 hours, after which the token will be approved for campaigns.",
             "text3": "Alternatively, you can visit our Discord and open a support ticket in the 'help-zone' channel."
         },
-        "amms": {
-            "title": "How can Metrom support your AMM?",
-            "text1": "Metrom enhances your AMM by making campaign creation and management seamless and cost-effective. With our streamlined UI, you can easily launch multiple campaigns in a single transaction, reducing time and effort.",
-            "text2": "Once your campaigns are live, Metrom’s KPI-based and range-targeted incentives attract liquidity efficiently and help retain it over time, maximizing the overall impact of your campaigns."
+        "dexes": {
+            "title": "How can Metrom support your DEX?",
+            "text1": "Metrom enhances your DEX by making campaign creation and management seamless and cost-effective. With our streamlined UI, you can easily launch multiple campaigns in a single transaction, reducing time and effort.",
+            "text2": "Once your campaigns are live, Metrom's KPI-based and range-targeted incentives attract liquidity efficiently and help retain it over time, maximizing the overall impact of your campaigns."
         }
     },
     "articles": {

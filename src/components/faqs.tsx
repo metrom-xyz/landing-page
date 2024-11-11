@@ -96,10 +96,10 @@ export function Amms({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
             <Typography variant="lg" className="leading-normal">
-                {dictionary.amms.text1}
+                {dictionary.dexes.text1}
             </Typography>
             <Typography variant="lg" className="leading-normal">
-                {dictionary.amms.text2}
+                {dictionary.dexes.text2}
             </Typography>
         </div>
     );
@@ -128,7 +128,7 @@ export function Faqs({ dictionary }: FaqsProps) {
             body: <Tokens dictionary={dictionary} />,
         },
         {
-            title: dictionary.amms.title,
+            title: dictionary.dexes.title,
             body: <Amms dictionary={dictionary} />,
         },
     ];
