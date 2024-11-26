@@ -19,6 +19,7 @@ import { Taiko } from "@/app/assets/logos/taiko";
 import { Panko } from "@/app/assets/logos/panko";
 import { Scroll } from "@/app/assets/logos/scroll";
 import { Scribe } from "@/app/assets/logos/scribe";
+import { BaseSwap } from "@/app/assets/logos/baseswap";
 
 interface Partner {
     name: string;
@@ -68,6 +69,10 @@ const DEXES: Partner[] = [
     {
         name: "Scribe",
         icon: Scribe,
+    },
+    {
+        name: "BaseSwap",
+        icon: BaseSwap,
     },
 ];
 
