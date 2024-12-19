@@ -5,7 +5,6 @@ import { Dictionary, SVGIconProps } from "@/types";
 import { Base } from "@/app/assets/logos/base";
 import { Mode } from "@/app/assets/logos/mode";
 import { Kim } from "@/app/assets/logos/kim";
-import { Swapsicle } from "@/app/assets/logos/swapsicle";
 import { Algebra } from "@/app/assets/logos/algebra";
 import { Mantle } from "@/app/assets/logos/mantle";
 import { ParnersGroup } from "./parters-group";
@@ -19,7 +18,6 @@ import { Taiko } from "@/app/assets/logos/taiko";
 import { Panko } from "@/app/assets/logos/panko";
 import { Scroll } from "@/app/assets/logos/scroll";
 import { Scribe } from "@/app/assets/logos/scribe";
-import { BaseSwap } from "@/app/assets/logos/baseswap";
 
 interface Partner {
     name: string;
@@ -55,10 +53,6 @@ const DEXES: Partner[] = [
         icon: Kim,
     },
     {
-        name: "Swapsicle",
-        icon: Swapsicle,
-    },
-    {
         name: "Algebra",
         icon: Algebra,
     },
@@ -69,10 +63,6 @@ const DEXES: Partner[] = [
     {
         name: "Scribe",
         icon: Scribe,
-    },
-    {
-        name: "BaseSwap",
-        icon: BaseSwap,
     },
 ];
 
