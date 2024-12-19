@@ -11,18 +11,18 @@
     "dependencies": {
         "@fontsource/ibm-plex-mono": "^5.1.0",
         "@fontsource/ibm-plex-sans": "^5.1.0",
-        "@formatjs/intl-localematcher": "^0.5.8",
+        "@formatjs/intl-localematcher": "^0.5.9",
         "@metrom-xyz/ui": "^0.10.0",
         "@react-spring/web": "^9.7.5",
         "negotiator": "^1.0.0",
         "next": "14.2.12",
         "react": "^18",
         "react-dom": "^18",
-        "viem": "^2.21.51"
+        "viem": "^2.21.55"
     },
     "devDependencies": {
         "@types/negotiator": "^0.6.3",
-        "@types/node": "^22.10.0",
+        "@types/node": "^22.10.2",
         "@types/react": "^18.3.12",
         "@types/react-dom": "^18.3.1",
         "eslint": "^8",
@@ -30,8 +30,8 @@
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
         "postcss": "^8.4.49",
-        "prettier": "^3.4.1",
-        "tailwindcss": "^3.4.15",
+        "prettier": "^3.4.2",
+        "tailwindcss": "^3.4.17",
         "typescript": "^5.7.2"
     }
 }
