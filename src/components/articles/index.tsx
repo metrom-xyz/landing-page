@@ -18,8 +18,8 @@ const ARTICLES = [
         illustration: ArticleGraphic2,
     },
     {
-        title: "Inside our Hats Finance audit",
-        link: "https://medium.com/@metromxyz/inside-our-hats-finance-audit-the-key-findings-dd0cf36a842a",
+        title: "Uniswap case study",
+        link: "https://medium.com/@metromxyz/case-study-how-metroms-kpi-based-incentives-outperform-traditional-liquidity-models-3a04ea582713",
         illustration: ArticleGraphic3,
     },
 ];
