@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { BASE_URL } from "@/common";
 import { i18n } from "@/i18n-config";
+import Fathom from "@/components/fathom";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -46,7 +47,10 @@ export default async function RootLayout({
     const { lang } = await params;
     return (
         <html lang={lang} className="bg-gray-100 px-4 py-6 md:px-12 md:py-16">
-            <body>{children}</body>
+            <body>
+                <Fathom />
+                {children}
+            </body>
         </html>
     );
 }
