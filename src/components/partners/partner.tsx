@@ -2,7 +2,7 @@ import { SVGIconProps } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
 import { FunctionComponent } from "react";
 
-interface PartnerProps {
+export interface PartnerProps {
     icon: FunctionComponent<SVGIconProps>;
     name: string;
 }
