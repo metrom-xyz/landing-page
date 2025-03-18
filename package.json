@@ -7,6 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
+        "commitlint": "commitlint -e",
         "prepare": "husky"
     },
     "dependencies": {
@@ -23,6 +24,8 @@
         "viem": "^2.21.55"
     },
     "devDependencies": {
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
         "@types/negotiator": "^0.6.3",
         "@types/node": "^22.10.2",
         "@types/react": "19.0.11",
@@ -31,6 +34,7 @@
         "eslint-config-next": "15.2.3",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
+        "husky": "^9.1.7",
         "postcss": "^8.4.49",
         "prettier": "^3.4.2",
         "tailwindcss": "^3.4.17",
