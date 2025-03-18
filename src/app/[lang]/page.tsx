@@ -1,6 +1,6 @@
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
-import { Partners } from "@/components/partners";
+import { Ecosystem } from "@/components/ecosystem";
 import { Articles } from "@/components/articles";
 import { Faqs } from "@/components/faqs";
 import { Footer } from "@/components/footer";
@@ -20,7 +20,7 @@ export default async function Home({
                 <Hero dictionary={dictionary.hero} />
                 <div className="flex md:flex-1 flex-col items-center gap-[4.75rem] w-full max-w-screen-xl">
                     <Features dictionary={dictionary.features} />
-                    <Partners dictionary={dictionary.partners} />
+                    <Ecosystem dictionary={dictionary.ecosystem} />
                     <Faqs dictionary={dictionary.faqs} />
                     <Articles dictionary={dictionary.articles} />
                 </div>
