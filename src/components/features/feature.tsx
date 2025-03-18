@@ -21,7 +21,7 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
             </h4>
             <Typography
                 weight="medium"
-                className="text-lg leading-normal text-gray-600"
+                className="text-lg! leading-normal! text-gray-600!"
             >
                 {description}
             </Typography>

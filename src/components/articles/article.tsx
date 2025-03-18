@@ -23,10 +23,10 @@ export function Article({
                 <Illustration className="fill-none w-full h-full" />
             </div>
             <Typography
-                variant="lg"
+                size="lg"
                 uppercase
                 weight="medium"
-                className="text-gray-600 leading-none z-10"
+                className="text-gray-600! leading-none! z-10"
             >
                 {dictionary.title}
             </Typography>
@@ -39,7 +39,7 @@ export function Article({
                 rel="noopener noreferrer"
                 icon={ExternalIcon}
                 iconPlacement="right"
-                className={{ root: "z-10", icon: "h-3 w-3" }}
+                className={{ root: "z-10", icon: "h-3! w-3!" }}
             >
                 {dictionary.read}
             </Button>

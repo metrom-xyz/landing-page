@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+    --border-radius-4xl: "1.875rem";
+}
