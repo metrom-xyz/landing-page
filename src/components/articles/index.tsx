@@ -22,6 +22,21 @@ const ARTICLES = [
         link: "https://medium.com/@metromxyz/inside-our-hats-finance-audit-the-key-findings-dd0cf36a842a",
         illustration: ArticleGraphic3,
     },
+    {
+        title: "Uniswap case study",
+        link: "https://medium.com/@metromxyz/case-study-how-metroms-kpi-based-incentives-outperform-traditional-liquidity-models-3a04ea582713",
+        illustration: ArticleGraphic3,
+    },
+    {
+        title: "5 power uses of KPI-based farming",
+        link: "https://medium.com/@metromxyz/5-power-uses-of-kpi-based-farming-cf90f812ead1",
+        illustration: ArticleGraphic2,
+    },
+    {
+        title: "Range-based incentives",
+        link: "https://medium.com/@metromxyz/range-based-incentives-optimizing-liquidity-in-amms-with-metrom-bb31a877c1e1",
+        illustration: ArticleGraphic1,
+    },
 ];
 
 export interface ArticlesProps {
