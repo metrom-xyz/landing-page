@@ -1,9 +1,8 @@
 "use client";
 
 import { ReactNode } from "react";
-import { Typography } from "@metrom-xyz/ui";
+import { Accordion, Typography } from "@metrom-xyz/ui";
 import { DOCUMENTATION_LINK, GITHUB_ISSUES_LINK } from "@/common";
-import { Accordion } from "./ui/accordion";
 import { Dictionary } from "@/types";
 import { interpolate } from "@/utils";
 
@@ -14,12 +13,16 @@ interface FaqsProps {
 export function Differences({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {interpolate(dictionary.differences.text1, {
-                    boldText: <b>{dictionary.differences.text1Bold}</b>,
+                    boldText: (
+                        <b key="differences">
+                            {dictionary.differences.text1Bold}
+                        </b>
+                    ),
                 })}
             </Typography>
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.differences.text2}
             </Typography>
         </div>
@@ -35,22 +38,23 @@ export function Campaigns({ dictionary }: FaqsProps) {
 
     return (
         <div className="flex flex-col gap-3">
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.campaigns.text1}
             </Typography>
             <ol className="list-decimal ml-5">
                 {steps.map((step, index) => (
                     <li key={index}>
-                        <Typography variant="lg" className="leading-normal">
+                        <Typography size="lg" className="leading-normal">
                             {step}
                         </Typography>
                     </li>
                 ))}
             </ol>
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {interpolate(dictionary.campaigns.text5, {
                     linkText: (
                         <a
+                            key="campaigns"
                             href={`${DOCUMENTATION_LINK}/creating-a-campaign`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -68,10 +72,11 @@ export function Campaigns({ dictionary }: FaqsProps) {
 export function Tokens({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {interpolate(dictionary.tokens.text1, {
                     linkText: (
                         <a
+                            key="tokens"
                             href={GITHUB_ISSUES_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -82,10 +87,10 @@ export function Tokens({ dictionary }: FaqsProps) {
                     ),
                 })}
             </Typography>
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.tokens.text2}
             </Typography>
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.tokens.text3}
             </Typography>
         </div>
@@ -95,10 +100,10 @@ export function Tokens({ dictionary }: FaqsProps) {
 export function Amms({ dictionary }: FaqsProps) {
     return (
         <div className="flex flex-col gap-3">
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.dexes.text1}
             </Typography>
-            <Typography variant="lg" className="leading-normal">
+            <Typography size="lg" className="leading-normal">
                 {dictionary.dexes.text2}
             </Typography>
         </div>
@@ -136,14 +141,23 @@ export function Faqs({ dictionary }: FaqsProps) {
     return (
         <div className="w-full flex flex-col gap-1 md:px-28">
             {FAQS.map(({ title, body }, index) => (
-                <Accordion key={index} title={title}>
-                    {typeof body === "string" ? (
-                        <Typography variant="lg" className="leading-normal">
-                            {body}
+                <Accordion
+                    key={index}
+                    title={
+                        <Typography size="xl" weight="medium" className="p-2">
+                            {title}
                         </Typography>
-                    ) : (
-                        body
-                    )}
+                    }
+                >
+                    <div className="p-6">
+                        {typeof body === "string" ? (
+                            <Typography size="lg" className="leading-normal">
+                                {body}
+                            </Typography>
+                        ) : (
+                            body
+                        )}
+                    </div>
                 </Accordion>
             ))}
         </div>

@@ -15,7 +15,7 @@ export function Partner({ icon: Icon, name }: PartnerProps) {
             </div>
             <Typography
                 weight="medium"
-                className="leading-normal text-gray-600"
+                className="leading-normal! text-gray-600!"
             >
                 {name}
             </Typography>

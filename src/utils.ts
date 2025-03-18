@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export const interpolate = (
     text: string,
     values: { [key: string]: JSX.Element },
