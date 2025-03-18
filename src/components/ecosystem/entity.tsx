@@ -1,16 +1,22 @@
 import { SVGIconProps } from "@/types";
-import { Typography } from "@metrom-xyz/ui";
+import { Chip, Typography } from "@metrom-xyz/ui";
 import { FunctionComponent } from "react";
 
-export interface PartnerProps {
+export interface EntityProps {
     icon: FunctionComponent<SVGIconProps>;
     name: string;
+    soon?: boolean;
 }
 
-export function Partner({ icon: Icon, name }: PartnerProps) {
+export function Entity({ icon: Icon, name, soon }: EntityProps) {
     return (
         <div className="flex flex-col gap-3 items-center">
-            <div className="flex justify-center items-center bg-black rounded-2xl h-24 w-24">
+            <div className="flex relative justify-center items-center bg-black rounded-2xl h-24 w-24">
+                {soon && (
+                    <Chip active className={{ root: "absolute -top-4" }}>
+                        Soon
+                    </Chip>
+                )}
                 <Icon className="h-14 w-14" />
             </div>
             <Typography

@@ -19,8 +19,8 @@
             "description": "Implement TVL KPIs for the community to unlock rewards based on TVL achieved"
         }
     },
-    "partners": {
-        "title": "Partners",
+    "ecosystem": {
+        "title": "Ecosystem",
         "chains": "Chains",
         "dexes": "DEXes",
         "liquityV2": "Liquity V2",
