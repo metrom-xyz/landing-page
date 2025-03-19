@@ -1,22 +1,22 @@
 {
     "hero": {
-        "title": "Maximize your liquidity mining impact with precise incentives",
-        "description": "Run efficient incentive strategies for your liquidity providers. Reduce leakage and maximize returns by using Metrom",
+        "title": "Programmable Incentive Distribution with Smart Liquidity Mining",
+        "description": "Transform your token incentive distribution into performance-driven rewards with KPIs and Range based incentives",
         "launch": "Launch app",
-        "more": "Documentation"
+        "more": "Uniswap Case Study"
     },
     "features": {
         "efficient": {
             "title": "Efficient Incentive Design",
-            "description": "Create tailored incentive structures that maximize capital efficiency and minimize leakage"
+            "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage "
         },
         "simple": {
-            "title": "Simple Creation Flow",
-            "description": "A simple and straightforward 3-step process towards creating custom campaigns"
+            "title": "KPI & Range Based Incentives",
+            "description": "Set KPIs and range-based rewards to incentivize liquidity providers based on performance metrics that matter most to your project"
         },
         "kpi": {
-            "title": "Set Community KPI",
-            "description": "Implement TVL KPIs for the community to unlock rewards based on TVL achieved"
+            "title": "Stable APR",
+            "description": "Structure your incentive design for high and stable APR for your community"
         }
     },
     "ecosystem": {
