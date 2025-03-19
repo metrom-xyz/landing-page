@@ -12,7 +12,7 @@ interface FeaturesProps {
 
 export function Features({ dictionary }: FeaturesProps) {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-20 md:px-28">
+        <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-16 md:px-28">
             <Feature
                 icon={EfficientIcon}
                 title={dictionary.efficient.title}

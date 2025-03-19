@@ -12,7 +12,7 @@ interface FeatureProps {
 
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     return (
-        <div className="w-full flex flex-col text-center items-center gap-4">
+        <div className="w-[300px] flex flex-col text-center items-center gap-4">
             <div className="p-5 bg-white rounded-2xl">
                 <Icon />
             </div>
