@@ -15,7 +15,7 @@ export function Hero({ dictionary }: HeroProps) {
             <Metrom className="mb-9" />
             <Typography
                 size="xl5"
-                className="text-[2.5rem]! md:text-6xl! leading-none! font-bold! max-w-5xl"
+                className="text-[2.5rem]! md:text-6xl! leading-none! font-bold! max-w-5xl whitespace-pre-line"
             >
                 {dictionary.title}
             </Typography>
