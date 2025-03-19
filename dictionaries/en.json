@@ -1,13 +1,13 @@
 {
     "hero": {
-        "title": "Programmable Incentive Distribution with Smart Liquidity Mining",
+        "title": "Programmable Incentive Distribution with KPIs",
         "description": "Transform your token incentive distribution into performance-driven rewards with KPIs and Range based incentives",
         "launch": "Launch app",
         "more": "Uniswap Case Study"
     },
     "features": {
         "efficient": {
-            "title": "Efficient Incentive Design",
+            "title": "Flexible Incentive Design",
             "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage "
         },
         "simple": {
