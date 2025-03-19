@@ -1,7 +1,7 @@
 "use client";
 
 import { Metrom } from "@/app/assets/logos/metrom";
-import { APP_LINK, DOCUMENTATION_LINK } from "@/common";
+import { APP_LINK, UNISWAP_CASE_STUDY_LINK } from "@/common";
 import type { Dictionary } from "@/types";
 import { Button, Typography } from "@metrom-xyz/ui";
 
@@ -34,7 +34,7 @@ export function Hero({ dictionary }: HeroProps) {
                     {dictionary.launch}
                 </Button>
                 <Button
-                    href={DOCUMENTATION_LINK}
+                    href={UNISWAP_CASE_STUDY_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={{ root: "w-full! md:min-w-44" }}
