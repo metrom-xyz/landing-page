@@ -21,8 +21,8 @@ export default async function Home({
                 <div className="flex md:flex-1 flex-col items-center gap-[4.75rem] w-full max-w-screen-xl">
                     <Features dictionary={dictionary.features} />
                     <Ecosystem dictionary={dictionary.ecosystem} />
-                    <Faqs dictionary={dictionary.faqs} />
                     <Articles dictionary={dictionary.articles} />
+                    <Faqs dictionary={dictionary.faqs} />
                 </div>
                 <Footer dictionary={dictionary.footer} />
             </div>
