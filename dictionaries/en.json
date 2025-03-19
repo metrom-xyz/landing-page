@@ -8,7 +8,7 @@
     "features": {
         "efficient": {
             "title": "Flexible Incentive Design",
-            "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage "
+            "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage"
         },
         "simple": {
             "title": "KPI & Range Based Incentives",
@@ -35,7 +35,7 @@
         },
         "step2": {
             "title": "Flexible Incentives",
-            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution. "
+            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution."
         },
         "step3": {
             "title": "One Transaction",

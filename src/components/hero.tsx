@@ -28,7 +28,7 @@ export function Hero({ dictionary }: HeroProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={{
-                        root: "w-full! md:min-w-44 bg-brand-green! hover:bg-green-300! text-black!",
+                        root: "bg-brand-green! hover:bg-green-300! text-black!",
                     }}
                 >
                     {dictionary.launch}
@@ -37,7 +37,6 @@ export function Hero({ dictionary }: HeroProps) {
                     href={UNISWAP_CASE_STUDY_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={{ root: "w-full! md:min-w-44" }}
                 >
                     {dictionary.more}
                 </Button>
