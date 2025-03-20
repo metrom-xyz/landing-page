@@ -140,6 +140,7 @@ export function Faqs({ dictionary }: FaqsProps) {
 
     return (
         <div className="w-full flex flex-col gap-1 md:px-28">
+            <div className="text-center mb-8 text-[30px] font-bold">FAQs</div>
             {FAQS.map(({ title, body }, index) => (
                 <Accordion
                     key={index}
