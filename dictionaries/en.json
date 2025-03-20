@@ -10,13 +10,25 @@
             "title": "Flexible Incentive Design",
             "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage"
         },
-        "simple": {
-            "title": "KPI & Range Based Incentives",
-            "description": "Set KPIs and range-based rewards to incentivize liquidity providers based on performance metrics that matter most to your project"
+        "KPI": {
+            "title": "Reward with KPIs",
+            "description": "Set KPIs to incentivize liquidity providers based on TVL performance metrics"
         },
-        "kpi": {
-            "title": "Stable APR",
+        "APR": {
+            "title": "Reward with a stable APR",
             "description": "Structure your incentive design for high and stable APR for your community"
+        },
+        "range": {
+            "title": "Reward only the range",
+            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution"
+        },
+        "points": {
+            "title": "Distribute points",
+            "description": "Distribute points based on the performance of the liquidity provider"
+        },
+        "flow": {
+            "title": "Simple and intuitive Flow",
+            "description": "A 3-step campaign creation process completed in a minute gives you almost instant access to liquidity providers"
         }
     },
     "ecosystem": {

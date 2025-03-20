@@ -20,13 +20,28 @@ export function Features({ dictionary }: FeaturesProps) {
             />
             <Feature
                 icon={RealtimeIcon}
-                title={dictionary.simple.title}
-                description={dictionary.simple.description}
+                title={dictionary.KPI.title}
+                description={dictionary.KPI.description}
             />
             <Feature
                 icon={ShieldIcon}
-                title={dictionary.kpi.title}
-                description={dictionary.kpi.description}
+                title={dictionary.range.title}
+                description={dictionary.range.description}
+            />
+            <Feature
+                icon={ShieldIcon}
+                title={dictionary.APR.title}
+                description={dictionary.APR.description}
+            />
+            <Feature
+                icon={ShieldIcon}
+                title={dictionary.points.title}
+                description={dictionary.points.description}
+            />
+            <Feature
+                icon={ShieldIcon}
+                title={dictionary.flow.title}
+                description={dictionary.flow.description}
             />
         </div>
     );
