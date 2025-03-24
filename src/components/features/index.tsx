@@ -1,6 +1,5 @@
 "use client";
 
-import { ShieldIcon } from "@/app/assets/shield-icon";
 import { AprIcon } from "@/app/assets/apr-icon";
 import { FlexibleIcon } from "@/app/assets/flexible-icon";
 import { KpiIcon } from "@/app/assets/kpi-icon";
@@ -8,6 +7,7 @@ import { RangeIcon } from "@/app/assets/range-icon";
 import { PointsIcon } from "@/app/assets/points-icon";
 import { Feature } from "./feature";
 import type { Dictionary } from "@/types";
+import { FlowIcon } from "@/app/assets/flow-icon";
 
 interface FeaturesProps {
     dictionary: Dictionary["features"];
@@ -42,7 +42,7 @@ export function Features({ dictionary }: FeaturesProps) {
                 description={dictionary.points.description}
             />
             <Feature
-                icon={ShieldIcon}
+                icon={FlowIcon}
                 title={dictionary.flow.title}
                 description={dictionary.flow.description}
             />
