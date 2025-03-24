@@ -1,9 +1,9 @@
 "use client";
 
-import { RealtimeIcon } from "@/app/assets/realtime-icon";
 import { ShieldIcon } from "@/app/assets/shield-icon";
 import { AprIcon } from "@/app/assets/apr-icon";
 import { FlexibleIcon } from "@/app/assets/flexible-icon";
+import { KpiIcon } from "@/app/assets/kpi-icon";
 import { Feature } from "./feature";
 import type { Dictionary } from "@/types";
 
@@ -20,7 +20,7 @@ export function Features({ dictionary }: FeaturesProps) {
                 description={dictionary.efficient.description}
             />
             <Feature
-                icon={RealtimeIcon}
+                icon={KpiIcon}
                 title={dictionary.KPI.title}
                 description={dictionary.KPI.description}
             />
