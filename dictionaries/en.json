@@ -8,7 +8,7 @@
     "features": {
         "efficient": {
             "title": "Flexible Incentive Design",
-            "description": "Deploy precision-engineered incentives that maximize TVL while minimizing token emissions and reducing incentive leakage"
+            "description": "Deploy precision-engineered incentives that maximize TVL while reducing incentive leakage"
         },
         "KPI": {
             "title": "Reward with KPIs",
@@ -28,7 +28,7 @@
         },
         "flow": {
             "title": "Simple and intuitive Flow",
-            "description": "A 3-step campaign creation process completed in a minute gives you almost instant access to liquidity providers"
+            "description": "A simple intuitive 3-step campaign creation process completed in a minute"
         }
     },
     "ecosystem": {
