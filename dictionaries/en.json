@@ -20,7 +20,7 @@
         },
         "range": {
             "title": "Reward only the range",
-            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution"
+            "description": "Tailor your rewards with a range-based structure for maximum effect and distribution"
         },
         "points": {
             "title": "Distribute points",
@@ -28,7 +28,7 @@
         },
         "flow": {
             "title": "Simple and intuitive Flow",
-            "description": "A simple intuitive 3-step campaign creation process completed in a minute"
+            "description": "A simple, intuitive 3-step campaign creation process completed in a minute"
         }
     },
     "ecosystem": {
