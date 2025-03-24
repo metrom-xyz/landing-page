@@ -4,6 +4,7 @@ import { ShieldIcon } from "@/app/assets/shield-icon";
 import { AprIcon } from "@/app/assets/apr-icon";
 import { FlexibleIcon } from "@/app/assets/flexible-icon";
 import { KpiIcon } from "@/app/assets/kpi-icon";
+import { RangeIcon } from "@/app/assets/range-icon";
 import { Feature } from "./feature";
 import type { Dictionary } from "@/types";
 
@@ -25,7 +26,7 @@ export function Features({ dictionary }: FeaturesProps) {
                 description={dictionary.KPI.description}
             />
             <Feature
-                icon={ShieldIcon}
+                icon={RangeIcon}
                 title={dictionary.range.title}
                 description={dictionary.range.description}
             />
