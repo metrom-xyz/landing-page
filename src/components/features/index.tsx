@@ -3,6 +3,7 @@
 import { EfficientIcon } from "@/app/assets/efficient-icon";
 import { RealtimeIcon } from "@/app/assets/realtime-icon";
 import { ShieldIcon } from "@/app/assets/shield-icon";
+import { AprIcon } from "@/app/assets/apr-icon";
 import { Feature } from "./feature";
 import type { Dictionary } from "@/types";
 
@@ -29,7 +30,7 @@ export function Features({ dictionary }: FeaturesProps) {
                 description={dictionary.range.description}
             />
             <Feature
-                icon={ShieldIcon}
+                icon={AprIcon}
                 title={dictionary.APR.title}
                 description={dictionary.APR.description}
             />
