@@ -150,8 +150,8 @@ interface PartnersProps {
 export function Ecosystem({ dictionary }: PartnersProps) {
     return (
         <section className="w-full md:px-28">
-            <div className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 bg-white rounded-4xl">
-                <h3 className="font-sans leading-10 text-4xl font-semibold text-center">
+            <div className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 theme-surface rounded-4xl">
+                <h3 className="font-sans leading-10 text-4xl theme-text font-semibold text-center">
                     {dictionary.title}
                 </h3>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 flex-wrap">
