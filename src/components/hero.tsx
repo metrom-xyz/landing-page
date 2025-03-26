@@ -11,18 +11,18 @@ interface HeroProps {
 
 export function Hero({ dictionary }: HeroProps) {
     return (
-        <section className="w-full flex flex-col gap-9 items-center text-center justify-center max-w-screen-2xl pt-28 pb-4 md:py-28 px-4 rounded-4xl bg-white">
-            <Metrom className="mb-9" />
+        <section className="w-full flex flex-col gap-9 items-center text-center justify-center max-w-screen-2xl pt-28 pb-4 md:py-28 px-4 rounded-4xl theme-surface">
+            <Metrom className="mb-9 text-black dark:text-white" />
             <Typography
                 size="xl5"
                 className="text-[2.5rem]! md:text-6xl! leading-none! font-bold! max-w-5xl whitespace-pre-line"
             >
                 {dictionary.title}
             </Typography>
-            <h2 className="text-xl2 leading-8 max-w-[600px] font-medium font-sans text-gray-600">
+            <h2 className="text-xl2 leading-8 max-w-[600px] font-medium font-sans text-gray-600 dark:text-gray-400">
                 {dictionary.description}
             </h2>
-            <div className="flex w-full md:w-fit gap-3">
+            <div className="flex w-full md:w-fit justify-center gap-3">
                 <Button
                     href={APP_LINK}
                     target="_blank"

@@ -14,6 +14,7 @@ import {
 } from "@/common";
 import { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
+import { ThemeSwitch } from "./theme-switch";
 
 interface FooterProps {
     dictionary: Dictionary["footer"];
@@ -51,8 +52,8 @@ export function Footer({ dictionary }: FooterProps) {
     ];
 
     return (
-        <footer className="w-full flex flex-col items-center md:items-start gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
-            <div className="flex flex-col gap-11">
+        <footer className="w-full flex flex-col items-center md:items-end gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
+            <div className="flex flex-col gap-6 space">
                 <div className="flex items-center justify-center gap-7">
                     {SOCIALS.map(({ icon: Icon, link, text }, index) => (
                         <a
@@ -62,25 +63,26 @@ export function Footer({ dictionary }: FooterProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Icon className="text-black h-6 w-6" />
+                            <Icon className="theme-text h-6 w-6" />
                         </a>
                     ))}
                 </div>
-                <Metrom className="max-w-48" />
+                <Metrom className="max-w-48 text-black dark:text-white" />
             </div>
-            <div className="h-full flex flex-col gap-3 text-center md:text-left">
-                {LINKS.map((link, index) => (
-                    <a
-                        key={index}
-                        href={link.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Typography weight="medium" className="text-black">
-                            {link.text}
-                        </Typography>
-                    </a>
-                ))}
+            <div className="flex gap-3 items-end">
+                <ThemeSwitch />
+                <div className="h-full flex flex-col gap-3 text-center md:text-left">
+                    {LINKS.map((link, index) => (
+                        <a
+                            key={index}
+                            href={link.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Typography weight="medium">{link.text}</Typography>
+                        </a>
+                    ))}
+                </div>
             </div>
         </footer>
     );

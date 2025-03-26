@@ -13,15 +13,15 @@ interface FeatureProps {
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     return (
         <div className="w-[300px] flex flex-col text-center items-center gap-4">
-            <div className="p-4 bg-white rounded-2xl">
-                <Icon className="w-12 h-12" />
+            <div className="p-4 theme-surface rounded-2xl">
+                <Icon className="w-9 h-9 theme-text" />
             </div>
-            <h4 className="font-sans text-xl2 leading-8 font-semibold">
+            <h4 className="font-sans text-xl2 leading-8 font-semibold theme-text">
                 {title}
             </h4>
             <Typography
                 weight="medium"
-                className="text-lg! leading-normal! text-gray-600!"
+                className="text-lg! leading-normal! text-gray-600! dark:text-gray-400!"
             >
                 {description}
             </Typography>

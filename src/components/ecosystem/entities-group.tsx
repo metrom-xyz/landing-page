@@ -8,7 +8,7 @@ interface EntitiesGroupProps {
 
 export function EntitiesGroup({ title, children }: EntitiesGroupProps) {
     return (
-        <div className="w-fit h-fit md:p-7 flex flex-col gap-6 md:bg-gray-100 rounded-2xl">
+        <div className="w-fit h-fit md:p-7 flex flex-col gap-6 md:theme-surface-2 rounded-2xl">
             <Typography className="text-xl2! font-semibold! text-center md:text-left">
                 {title}
             </Typography>

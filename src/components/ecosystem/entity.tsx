@@ -11,7 +11,7 @@ export interface EntityProps {
 export function Entity({ icon: Icon, name, soon }: EntityProps) {
     return (
         <div className="flex flex-col gap-3 items-center">
-            <div className="flex relative justify-center items-center bg-black rounded-2xl h-24 w-24">
+            <div className="flex relative justify-center items-center bg-dark-bg rounded-2xl h-24 w-24">
                 {soon && (
                     <Chip active className={{ root: "absolute -top-4" }}>
                         Soon
@@ -21,7 +21,7 @@ export function Entity({ icon: Icon, name, soon }: EntityProps) {
             </div>
             <Typography
                 weight="medium"
-                className="leading-normal! text-gray-600!"
+                className="leading-normal! text-gray-600! dark:text-gray-200!"
             >
                 {name}
             </Typography>

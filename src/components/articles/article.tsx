@@ -18,7 +18,7 @@ export function Article({
     dictionary,
 }: ArticleProps) {
     return (
-        <div className="relative overflow-hidden bg-white w-full md:w-fit min-h-[344px] md:min-h-[500px] max-w-[413px] flex flex-col items-center text-center gap-8 p-10 rounded-2xl">
+        <div className="relative overflow-hidden theme-surface w-full md:w-fit min-h-[344px] md:min-h-[500px] max-w-[413px] flex flex-col items-center text-center gap-8 p-10 rounded-2xl">
             <div className="absolute -bottom-16 md:bottom-0 md:h-auto w-full z-0">
                 <Illustration className="fill-none w-full h-full" />
             </div>
@@ -26,11 +26,11 @@ export function Article({
                 size="lg"
                 uppercase
                 weight="medium"
-                className="text-gray-600! leading-none! z-10"
+                className="text-gray-600! dark:text-gray-400! leading-none! z-10"
             >
                 {dictionary.title}
             </Typography>
-            <h2 className="text-4xl md:text-xl5 font-sans font-semibold flex-1 leading-none z-10">
+            <h2 className="text-4xl md:text-xl5 font-sans font-semibold theme-text flex-1 leading-none z-10">
                 {title}
             </h2>
             <Button
