@@ -22,13 +22,13 @@ export function Hero({ dictionary }: HeroProps) {
             <h2 className="text-xl2 leading-8 max-w-[600px] font-medium font-sans text-gray-600 dark:text-gray-400">
                 {dictionary.description}
             </h2>
-            <div className="flex w-full md:w-fit justify-center gap-3">
+            <div className="flex flex-col md:flex-row items-center w-full md:w-fit justify-center gap-3">
                 <Button
                     href={APP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={{
-                        root: "bg-brand-green! hover:bg-green-300! text-black!",
+                        root: "bg-brand-green! hover:bg-green-300! text-black! !min-w-52",
                     }}
                 >
                     {dictionary.launch}
@@ -37,6 +37,9 @@ export function Hero({ dictionary }: HeroProps) {
                     href={UNISWAP_CASE_STUDY_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={{
+                        root: "!min-w-52",
+                    }}
                 >
                     {dictionary.more}
                 </Button>
