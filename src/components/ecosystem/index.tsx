@@ -31,6 +31,8 @@ import { Fibonacci } from "@/app/assets/logos/dexes/fibonacci";
 import { Swapr } from "@/app/assets/logos/dexes/swapr";
 import { Orki } from "@/app/assets/logos/liquity-v2-platforms/orki";
 import { Velodrome } from "@/app/assets/logos/dexes/velodrome";
+import { Oku } from "@/app/assets/logos/dexes/oku";
+import { LightLinkPhoenix } from "@/app/assets/logos/chains/lightlink-phoenix";
 
 const CHAINS: EntityProps[] = [
     {
@@ -68,6 +70,10 @@ const CHAINS: EntityProps[] = [
     {
         name: "Sonic",
         icon: Sonic,
+    },
+    {
+        name: "LightLink",
+        icon: LightLinkPhoenix,
     },
 ];
 
@@ -111,6 +117,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Fibonacci",
         icon: Fibonacci,
+    },
+    {
+        name: "Oku",
+        icon: Oku,
     },
     {
         name: "Swapr",
