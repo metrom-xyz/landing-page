@@ -33,6 +33,9 @@ import { Orki } from "@/app/assets/logos/liquity-v2-platforms/orki";
 import { Velodrome } from "@/app/assets/logos/dexes/velodrome";
 import { Oku } from "@/app/assets/logos/dexes/oku";
 import { LightLinkPhoenix } from "@/app/assets/logos/chains/lightlink-phoenix";
+import { Hemi } from "@/app/assets/logos/chains/hemi";
+import { Amped } from "@/app/assets/logos/dexes/amped";
+import { Swell } from "@/app/assets/logos/chains/swell";
 
 const CHAINS: EntityProps[] = [
     {
@@ -74,6 +77,14 @@ const CHAINS: EntityProps[] = [
     {
         name: "LightLink",
         icon: LightLinkPhoenix,
+    },
+    {
+        name: "Swell",
+        icon: Swell,
+    },
+    {
+        name: "Hemi",
+        icon: Hemi,
     },
 ];
 
@@ -127,13 +138,17 @@ const DEXES: EntityProps[] = [
         icon: Swapr,
     },
     {
+        name: "Velodrome",
+        icon: Velodrome,
+    },
+    {
         name: "Curve",
         icon: Curve,
         soon: true,
     },
     {
-        name: "Velodrome",
-        icon: Velodrome,
+        name: "Amped",
+        icon: Amped,
         soon: true,
     },
 ];
