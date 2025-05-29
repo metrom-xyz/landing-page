@@ -21,13 +21,8 @@ import { Gnosis } from "@/app/assets/logos/chains/gnosis";
 import { Form } from "@/app/assets/logos/chains/form";
 import { Sonic } from "@/app/assets/logos/chains/sonic";
 import { Uniswap } from "@/app/assets/logos/dexes/uniswap";
-import { Kim } from "@/app/assets/logos/dexes/kim";
-import { Swapsicle } from "@/app/assets/logos/dexes/swapsicle";
 import { BaseSwap } from "@/app/assets/logos/dexes/baseswap";
-import { ThirdTrade } from "@/app/assets/logos/dexes/thirdtrade";
-import { Scribe } from "@/app/assets/logos/dexes/scribe";
 import { SilverSwap } from "@/app/assets/logos/dexes/silverswap";
-import { Fibonacci } from "@/app/assets/logos/dexes/fibonacci";
 import { Swapr } from "@/app/assets/logos/dexes/swapr";
 import { Orki } from "@/app/assets/logos/liquity-v2-platforms/orki";
 import { Velodrome } from "@/app/assets/logos/dexes/velodrome";
@@ -102,32 +97,12 @@ const DEXES: EntityProps[] = [
         icon: Unagi,
     },
     {
-        name: "Kim",
-        icon: Kim,
-    },
-    {
-        name: "Swapsicle",
-        icon: Swapsicle,
-    },
-    {
         name: "Baseswap",
         icon: BaseSwap,
     },
     {
-        name: "Third Trade",
-        icon: ThirdTrade,
-    },
-    {
-        name: "Scribe",
-        icon: Scribe,
-    },
-    {
         name: "SilverSwap",
         icon: SilverSwap,
-    },
-    {
-        name: "Fibonacci",
-        icon: Fibonacci,
     },
     {
         name: "Oku",
