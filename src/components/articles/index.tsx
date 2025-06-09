@@ -40,7 +40,7 @@ const ARTICLES = [
 ];
 
 export interface ArticlesProps {
-    dictionary: Dictionary["articles"];
+    dictionary: Dictionary["home"]["articles"];
 }
 
 export function Articles({ dictionary }: ArticlesProps) {

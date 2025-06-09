@@ -15,6 +15,7 @@ import {
 import { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
 import { ThemeSwitch } from "./theme-switch";
+import Link from "next/link";
 
 interface FooterProps {
     dictionary: Dictionary["footer"];
@@ -37,6 +38,11 @@ export function Footer({ dictionary }: FooterProps) {
     ];
 
     const LINKS = [
+        {
+            text: dictionary.links.jobs,
+            internal: true,
+            link: "/jobs",
+        },
         {
             text: dictionary.links.support,
             link: DISCORD_LINK,
@@ -72,16 +78,22 @@ export function Footer({ dictionary }: FooterProps) {
             <div className="flex gap-3 items-end">
                 <ThemeSwitch />
                 <div className="h-full flex flex-col gap-3 text-center md:text-left">
-                    {LINKS.map((link, index) => (
-                        <a
-                            key={index}
-                            href={link.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Typography weight="medium">{link.text}</Typography>
-                        </a>
-                    ))}
+                    {LINKS.map(({ link, text, internal }, index) =>
+                        internal ? (
+                            <Link key={index} href={link}>
+                                <Typography weight="medium">{text}</Typography>
+                            </Link>
+                        ) : (
+                            <a
+                                key={index}
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Typography weight="medium">{text}</Typography>
+                            </a>
+                        ),
+                    )}
                 </div>
             </div>
         </footer>

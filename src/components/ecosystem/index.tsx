@@ -149,7 +149,7 @@ const LIQUITY_V2_PLATFORMS: EntityProps[] = [
 ];
 
 interface PartnersProps {
-    dictionary: Dictionary["ecosystem"];
+    dictionary: Dictionary["home"]["ecosystem"];
 }
 
 export function Ecosystem({ dictionary }: PartnersProps) {

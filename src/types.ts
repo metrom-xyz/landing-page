@@ -12,3 +12,17 @@ export type SVGIconProps = Omit<
 >;
 
 export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
+
+export interface JobDescriptor {
+    id: string;
+    active: boolean;
+    title: string;
+    location: string;
+    type: string;
+    shortDescription: string;
+    role: string;
+    responsibilities: string[];
+    requirements: string[];
+    niceToHave: string[];
+    workingConditions: string[];
+}
