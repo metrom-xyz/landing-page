@@ -7,8 +7,6 @@ export const JOBS_OPENINGS: JobDescriptor[] = [
         title: "Subgraph Developer",
         location: "Remote",
         type: "Contract / Part-Time / Full-Time (Flexible)",
-        shortDescription:
-            "We are looking for a Subgraph Developer to build and maintain subgraph integrations for various DeFi protocols.",
         role: "We are looking for a Subgraph Developer to build and maintain subgraph integrations for various DeFi protocols. You will be responsible for independently researching new protocols, reading smart contracts written in Solidity, designing subgraph schemas, and implementing indexing logic using The Graph. You'll work closely with the product team to ensure alignment with Metrom's campaign requirements and data strategy.",
         responsibilities: [
             "Research DeFi protocols to understand integration requirements",

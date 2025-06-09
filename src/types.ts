@@ -19,7 +19,6 @@ export interface JobDescriptor {
     title: string;
     location: string;
     type: string;
-    shortDescription: string;
     role: string;
     responsibilities: string[];
     requirements: string[];
