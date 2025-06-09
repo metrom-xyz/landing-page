@@ -4,6 +4,8 @@ import { BASE_URL } from "@/common";
 import { i18n } from "@/i18n-config";
 import Fathom from "@/components/fathom";
 import { ThemeProvider } from "next-themes";
+import { Footer } from "@/components/footer";
+import { getDictionary } from "@/dictionaries";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -45,6 +47,8 @@ export default async function RootLayout({
     params: Promise<{ lang: string }>;
 }>) {
     const { lang } = await params;
+    const dictionary = await getDictionary(lang);
+
     return (
         <html
             lang={lang}
@@ -54,7 +58,10 @@ export default async function RootLayout({
             <body>
                 <ThemeProvider attribute="data-theme">
                     <Fathom />
-                    {children}
+                    <div className="flex flex-col gap-[4.75rem] justify-center items-center">
+                        <div className="w-full min-h-screen">{children}</div>
+                        <Footer dictionary={dictionary.footer} />
+                    </div>
                 </ThemeProvider>
             </body>
         </html>

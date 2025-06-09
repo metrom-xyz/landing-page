@@ -10,7 +10,7 @@ import type { Dictionary } from "@/types";
 import { FlowIcon } from "@/app/assets/flow-icon";
 
 interface FeaturesProps {
-    dictionary: Dictionary["features"];
+    dictionary: Dictionary["home"]["features"];
 }
 
 export function Features({ dictionary }: FeaturesProps) {

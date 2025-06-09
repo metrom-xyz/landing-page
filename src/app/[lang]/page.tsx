@@ -3,7 +3,6 @@ import { Features } from "@/components/features";
 import { Ecosystem } from "@/components/ecosystem";
 import { Articles } from "@/components/articles";
 import { Faqs } from "@/components/faqs";
-import { Footer } from "@/components/footer";
 import { getDictionary } from "../../dictionaries";
 
 export default async function Home({
@@ -15,16 +14,13 @@ export default async function Home({
     const dictionary = await getDictionary(lang);
 
     return (
-        <div className="flex justify-center min-h-screen">
-            <div className="w-full flex items-center flex-col gap-20 md:gap-[4.75rem]">
-                <Hero dictionary={dictionary.hero} />
-                <div className="flex md:flex-1 flex-col items-center gap-[4.75rem] w-full max-w-screen-xl">
-                    <Features dictionary={dictionary.features} />
-                    <Ecosystem dictionary={dictionary.ecosystem} />
-                    <Articles dictionary={dictionary.articles} />
-                    <Faqs dictionary={dictionary.faqs} />
-                </div>
-                <Footer dictionary={dictionary.footer} />
+        <div className="w-full flex items-center flex-col gap-20 md:gap-[4.75rem]">
+            <Hero dictionary={dictionary.home.hero} />
+            <div className="flex md:flex-1 flex-col items-center gap-[4.75rem] w-full max-w-screen-xl">
+                <Features dictionary={dictionary.home.features} />
+                <Ecosystem dictionary={dictionary.home.ecosystem} />
+                <Articles dictionary={dictionary.home.articles} />
+                <Faqs dictionary={dictionary.home.faqs} />
             </div>
         </div>
     );

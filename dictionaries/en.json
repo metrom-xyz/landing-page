@@ -1,95 +1,119 @@
 {
-    "hero": {
-        "title": "Programmable Incentive Distribution with KPIs",
-        "description": "Transform your token incentive distribution into performance-driven rewards with KPIs and Range based incentives",
-        "launch": "Launch app",
-        "more": "Uniswap Case Study"
-    },
-    "features": {
-        "efficient": {
-            "title": "Flexible Incentive Design",
-            "description": "Deploy precision-engineered incentives that maximize TVL while reducing incentive leakage"
+    "home": {
+        "hero": {
+            "title": "Programmable Incentive Distribution with KPIs",
+            "description": "Transform your token incentive distribution into performance-driven rewards with KPIs and Range based incentives",
+            "launch": "Launch app",
+            "more": "Uniswap Case Study"
         },
-        "KPI": {
-            "title": "Reward with KPIs",
-            "description": "Set KPIs to incentivize liquidity providers based on TVL performance metrics"
+        "features": {
+            "efficient": {
+                "title": "Flexible Incentive Design",
+                "description": "Deploy precision-engineered incentives that maximize TVL while reducing incentive leakage"
+            },
+            "KPI": {
+                "title": "Reward with KPIs",
+                "description": "Set KPIs to incentivize liquidity providers based on TVL performance metrics"
+            },
+            "APR": {
+                "title": "Reward with a stable APR",
+                "description": "Structure your incentive design for high and stable APR for your community"
+            },
+            "range": {
+                "title": "Reward only the range",
+                "description": "Tailor your rewards with a range-based structure for maximum effect and distribution"
+            },
+            "points": {
+                "title": "Distribute points",
+                "description": "Distribute points based on the performance of the liquidity provider"
+            },
+            "flow": {
+                "title": "Simple and intuitive Flow",
+                "description": "A simple, intuitive 3-step campaign creation process completed in a minute"
+            }
         },
-        "APR": {
-            "title": "Reward with a stable APR",
-            "description": "Structure your incentive design for high and stable APR for your community"
+        "ecosystem": {
+            "title": "Ecosystem",
+            "chains": "Chains",
+            "dexes": "DEXes",
+            "liquityV2": "Liquity V2",
+            "auditors": "Audits",
+            "add": "Partner with Us"
         },
-        "range": {
-            "title": "Reward only the range",
-            "description": "Tailor your rewards with a range-based structure for maximum effect and distribution"
+        "quickstart": {
+            "title": "DEFI Incentivisation",
+            "step1": {
+                "title": "Simple Creation Flow",
+                "description": "A 3-step campaign creation process completed in two minutes gives you almost instant access to liquidity providers."
+            },
+            "step2": {
+                "title": "Flexible Incentives",
+                "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution."
+            },
+            "step3": {
+                "title": "One Transaction",
+                "description": "Add multiple to a single campaign, and stack multiple campaign in an transactions."
+            }
         },
-        "points": {
-            "title": "Distribute points",
-            "description": "Distribute points based on the performance of the liquidity provider"
+        "faqs": {
+            "metrom": {
+                "title": "What is Metrom?",
+                "text": "Metrom is a flexible liquidity mining platform designed to help DEXes and projects efficiently launch and manage multiple incentivization campaigns. With a focus on security, ease of use and efficiency, Metrom enables projects to create campaigns quickly, with minimal leakage, while optimizing rewards for liquidity providers."
+            },
+            "differences": {
+                "title": "How are we different from others?",
+                "text1": "Metrom's key differentiator is its {{boldText}}, which ensures that rewards are distributed based on TVL performance metrics that matter most to your liquidity needs. Unlike traditional farming, where rewards may be misallocated or diluted, Metrom’s KPI-driven approach focuses rewards on specific targets, optimizing the impact of each campaign.",
+                "text1Bold": "KPI-based Incentivisation",
+                "text2": "Additionally, Metrom allows you to launch multiple campaigns with multiple rewards in a single transaction, saving time and reducing complexity. By using off-chain computations, it further enhances accuracy and frequency in reward distribution, significantly improving the overall experience for campaign creators and liquidity providers."
+            },
+            "campaigns": {
+                "title": "How do I create a campaign?",
+                "text1": "Creating a campaign on Metrom is simple:",
+                "text2": "Select your DEX and liquidity pair.",
+                "text3": "Add your reward tokens and set your campaign duration.",
+                "text4": "Launch the campaign—all in under a minute.",
+                "text5": "For a more in-depth guide, you can watch the tutorial video or read our {{linkText}}.",
+                "text5Link": "GitBook here"
+            },
+            "tokens": {
+                "title": "How do I whitelist a reward token?",
+                "text1": "You can whitelist a reward token by simply going to the Metrom's {{linkText}} and create a ticket by filling the form with the details.",
+                "text1Link": "GitHub repository",
+                "text2": "The process typically takes 24 to 48 hours, after which the token will be approved for campaigns.",
+                "text3": "Alternatively, you can visit our Discord and open a support ticket in the 'help-zone' channel."
+            },
+            "dexes": {
+                "title": "How can Metrom support your DEX?",
+                "text1": "Metrom enhances your DEX by making campaign creation and management seamless and cost-effective. With our streamlined UI, you can easily launch multiple campaigns in a single transaction, reducing time and effort.",
+                "text2": "Once your campaigns are live, Metrom's KPI-based and range-targeted incentives attract liquidity efficiently and help retain it over time, maximizing the overall impact of your campaigns."
+            }
         },
-        "flow": {
-            "title": "Simple and intuitive Flow",
-            "description": "A simple, intuitive 3-step campaign creation process completed in a minute"
+        "articles": {
+            "title": "Article",
+            "read": "Read now"
         }
     },
-    "ecosystem": {
-        "title": "Ecosystem",
-        "chains": "Chains",
-        "dexes": "DEXes",
-        "liquityV2": "Liquity V2",
-        "auditors": "Audits",
-        "add": "Partner with Us"
-    },
-    "quickstart": {
-        "title": "DEFI Incentivisation",
-        "step1": {
-            "title": "Simple Creation Flow",
-            "description": "A 3-step campaign creation process completed in two minutes gives you almost instant access to liquidity providers."
-        },
-        "step2": {
-            "title": "Flexible Incentives",
-            "description": "Tailor your rewards with in a range-based structure for maximum effect and distribution."
-        },
-        "step3": {
-            "title": "One Transaction",
-            "description": "Add multiple to a single campaign, and stack multiple campaign in an transactions."
+    "jobs": {
+        "title": "Work with us",
+        "about": {
+            "title": "About Metrom",
+            "metrom": "Metrom is a programmable incentive platform that helps protocols design sustainable, KPI-based reward campaigns for liquidity providers. We're working with leading chains and DeFi protocols to reshape how token incentives are structured across the ecosystem."
         }
     },
-    "faqs": {
-        "metrom": {
-            "title": "What is Metrom?",
-            "text": "Metrom is a flexible liquidity mining platform designed to help DEXes and projects efficiently launch and manage multiple incentivization campaigns. With a focus on security, ease of use and efficiency, Metrom enables projects to create campaigns quickly, with minimal leakage, while optimizing rewards for liquidity providers."
-        },
-        "differences": {
-            "title": "How are we different from others?",
-            "text1": "Metrom's key differentiator is its {{boldText}}, which ensures that rewards are distributed based on TVL performance metrics that matter most to your liquidity needs. Unlike traditional farming, where rewards may be misallocated or diluted, Metrom’s KPI-driven approach focuses rewards on specific targets, optimizing the impact of each campaign.",
-            "text1Bold": "KPI-based Incentivisation",
-            "text2": "Additionally, Metrom allows you to launch multiple campaigns with multiple rewards in a single transaction, saving time and reducing complexity. By using off-chain computations, it further enhances accuracy and frequency in reward distribution, significantly improving the overall experience for campaign creators and liquidity providers."
-        },
-        "campaigns": {
-            "title": "How do I create a campaign?",
-            "text1": "Creating a campaign on Metrom is simple:",
-            "text2": "Select your DEX and liquidity pair.",
-            "text3": "Add your reward tokens and set your campaign duration.",
-            "text4": "Launch the campaign—all in under a minute.",
-            "text5": "For a more in-depth guide, you can watch the tutorial video or read our {{linkText}}.",
-            "text5Link": "GitBook here"
-        },
-        "tokens": {
-            "title": "How do I whitelist a reward token?",
-            "text1": "You can whitelist a reward token by simply going to the Metrom's {{linkText}} and create a ticket by filling the form with the details.",
-            "text1Link": "GitHub repository",
-            "text2": "The process typically takes 24 to 48 hours, after which the token will be approved for campaigns.",
-            "text3": "Alternatively, you can visit our Discord and open a support ticket in the 'help-zone' channel."
-        },
-        "dexes": {
-            "title": "How can Metrom support your DEX?",
-            "text1": "Metrom enhances your DEX by making campaign creation and management seamless and cost-effective. With our streamlined UI, you can easily launch multiple campaigns in a single transaction, reducing time and effort.",
-            "text2": "Once your campaigns are live, Metrom's KPI-based and range-targeted incentives attract liquidity efficiently and help retain it over time, maximizing the overall impact of your campaigns."
-        }
-    },
-    "articles": {
-        "title": "Article",
-        "read": "Read now"
+    "job": {
+        "location": "Location",
+        "contractType": "Contract type",
+        "aboutMetrom": "About Metrom",
+        "metrom": "Metrom is a programmable incentive platform that helps protocols design sustainable, KPI-based reward campaigns for liquidity providers. We're working with leading chains and DeFi protocols to reshape how token incentives are structured across the ecosystem.",
+        "roleOverview": "Role overview",
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "niceToHave": "Nice to have",
+        "workingConditions": "Working conditions",
+        "aboutTheTeam": "About the team",
+        "team": "Metrom is a small, fast-moving team of six. You'll be working closely with our CTO and co-founder, alongside our developers and product team to bring new integrations to life. As we scale our tech stack and onboard more partners, we're planning to grow the technical team over the coming quarters — and you'll be a key part of shaping that growth.",
+        "applications": "Applications",
+        "project": "Project"
     },
     "footer": {
         "socials": {
@@ -99,6 +123,7 @@
             "telegram": "Join our Telegram chat"
         },
         "links": {
+            "jobs": "Jobs",
             "support": "Support",
             "documentation": "Documentation",
             "contact": "Contact us"

@@ -6,7 +6,7 @@ import type { Dictionary } from "@/types";
 import { Button, Typography } from "@metrom-xyz/ui";
 
 interface HeroProps {
-    dictionary: Dictionary["hero"];
+    dictionary: Dictionary["home"]["hero"];
 }
 
 export function Hero({ dictionary }: HeroProps) {

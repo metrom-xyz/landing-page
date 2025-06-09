@@ -7,7 +7,7 @@ import { Dictionary } from "@/types";
 import { interpolate } from "@/utils";
 
 interface FaqsProps {
-    dictionary: Dictionary["faqs"];
+    dictionary: Dictionary["home"]["faqs"];
 }
 
 export function Differences({ dictionary }: FaqsProps) {
@@ -111,7 +111,7 @@ export function Amms({ dictionary }: FaqsProps) {
 }
 
 interface FaqsProps {
-    dictionary: Dictionary["faqs"];
+    dictionary: Dictionary["home"]["faqs"];
 }
 
 export function Faqs({ dictionary }: FaqsProps) {
