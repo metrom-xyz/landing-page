@@ -1,3 +1,4 @@
+import { i18n } from "@/i18n-config";
 import { getDictionary } from "../../../dictionaries";
 import { Jobs } from "@/components/jobs";
 
@@ -16,4 +17,8 @@ export default async function JobsPage({
             </div>
         </div>
     );
+}
+
+export async function generateStaticParams() {
+    return i18n.locales.map((locale) => ({ lang: locale }));
 }

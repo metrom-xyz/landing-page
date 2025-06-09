@@ -2,6 +2,7 @@ import { Job } from "@/components/jobs/job";
 import { getDictionary } from "../../../../dictionaries";
 import { JOBS_OPENINGS } from "@/common/jobs";
 import { notFound } from "next/navigation";
+import { i18n } from "@/i18n-config";
 
 export default async function JobPage({
     params,
@@ -20,5 +21,11 @@ export default async function JobPage({
                 <Job {...job} dictionary={dictionary.job} />
             </div>
         </div>
+    );
+}
+
+export async function generateStaticParams() {
+    return i18n.locales.flatMap((locale) =>
+        JOBS_OPENINGS.map((job) => ({ lang: locale, id: job.id })),
     );
 }

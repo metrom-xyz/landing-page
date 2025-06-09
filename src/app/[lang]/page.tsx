@@ -4,6 +4,7 @@ import { Ecosystem } from "@/components/ecosystem";
 import { Articles } from "@/components/articles";
 import { Faqs } from "@/components/faqs";
 import { getDictionary } from "../../dictionaries";
+import { i18n } from "@/i18n-config";
 
 export default async function Home({
     params,
@@ -24,4 +25,8 @@ export default async function Home({
             </div>
         </div>
     );
+}
+
+export async function generateStaticParams() {
+    return i18n.locales.map((locale) => ({ lang: locale }));
 }
