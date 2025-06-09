@@ -94,10 +94,12 @@
         }
     },
     "jobs": {
-        "title": "Work with us",
+        "title": "Jobs - Work with us",
+        "openPositions": "Open positions",
+        "remote": "Remote, worldwide",
         "about": {
-            "title": "About Metrom",
-            "metrom": "Metrom is a programmable incentive platform that helps protocols design sustainable, KPI-based reward campaigns for liquidity providers. We're working with leading chains and DeFi protocols to reshape how token incentives are structured across the ecosystem."
+            "title": "Build the future of incentives",
+            "metrom": "Metrom is re-defining how DeFi incentives work. Come join us, build a strategy with your name on it."
         }
     },
     "job": {
