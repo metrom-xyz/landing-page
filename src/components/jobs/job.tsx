@@ -8,6 +8,7 @@ import { ListSection } from "./list-section";
 import { Section } from "./section";
 import { MailboxIcon } from "@/app/assets/mailbox";
 import { MetromCompact } from "@/app/assets/logos/metrom-compact";
+import { Metrom } from "@/app/assets/logos/metrom";
 
 interface JobProps extends JobDescriptor {
     dictionary: Dictionary["job"];
@@ -26,6 +27,7 @@ export function Job({
 }: JobProps) {
     return (
         <div className="w-full flex flex-col items-start gap-10">
+            <Metrom className="text-black dark:text-white" />
             <h1 className="font-sans leading-10 text-4xl theme-text font-semibold text-center uppercase">
                 {title}
             </h1>
