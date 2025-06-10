@@ -94,7 +94,8 @@
         }
     },
     "jobs": {
-        "title": "Jobs - Work with us",
+        "title1": "Work with us -",
+        "title2": "Build the future of incentives",
         "openPositions": "Open positions",
         "remote": "Remote, worldwide",
         "about": {

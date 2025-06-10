@@ -58,9 +58,9 @@ export function Footer({ dictionary }: FooterProps) {
     ];
 
     return (
-        <footer className="w-full flex flex-col items-center md:items-end gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 max-w-screen-2xl">
-            <div className="flex flex-col gap-6 space">
-                <div className="flex items-center justify-center gap-7">
+        <footer className="w-full flex flex-col items-center md:items-end gap-10 md:gap-0 md:flex-row md:justify-between md:mt-16 p-8 rounded-xl max-w-screen-xl theme-surface">
+            <div className="md:min-h-[188px] flex flex-col gap-6 justify-between">
+                <div className="h-full flex justify-between -mx-2.5">
                     {SOCIALS.map(({ icon: Icon, link, text }, index) => (
                         <a
                             key={index}
@@ -68,32 +68,38 @@ export function Footer({ dictionary }: FooterProps) {
                             aria-label={text}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="p-2.5 rounded-full theme-surface-hover transition-colors duration-200 ease-in-out"
                         >
                             <Icon className="theme-text h-6 w-6" />
                         </a>
                     ))}
                 </div>
-                <Metrom className="max-w-48 text-black dark:text-white" />
+                <Metrom className="max-w-52 text-black dark:text-white" />
             </div>
-            <div className="flex gap-3 items-end">
-                <ThemeSwitch />
-                <div className="h-full flex flex-col gap-3 text-center md:text-left">
-                    {LINKS.map(({ link, text, internal }, index) =>
-                        internal ? (
-                            <Link key={index} href={link}>
-                                <Typography weight="medium">{text}</Typography>
-                            </Link>
-                        ) : (
-                            <a
-                                key={index}
-                                href={link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Typography weight="medium">{text}</Typography>
-                            </a>
-                        ),
-                    )}
+            <div className="h-full flex flex-col gap-0.5 text-center md:text-left">
+                {LINKS.map(({ link, text, internal }, index) =>
+                    internal ? (
+                        <Link
+                            key={index}
+                            href={link}
+                            className="p-1.5 rounded-md theme-surface-hover transition-colors duration-200 ease-in-out"
+                        >
+                            <Typography weight="medium">{text}</Typography>
+                        </Link>
+                    ) : (
+                        <a
+                            key={index}
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 rounded-md theme-surface-hover transition-colors duration-200 ease-in-out"
+                        >
+                            <Typography weight="medium">{text}</Typography>
+                        </a>
+                    ),
+                )}
+                <div className="mt-4">
+                    <ThemeSwitch />
                 </div>
             </div>
         </footer>
