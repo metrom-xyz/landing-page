@@ -1,11 +1,12 @@
 "use client";
 
 import { Dictionary } from "@/types";
-import { Card, Typography } from "@metrom-xyz/ui";
+import { Typography } from "@metrom-xyz/ui";
 import { JOBS_OPENINGS } from "@/common/jobs";
 import Link from "next/link";
 import { ArrowRightIcon } from "@/app/assets/arrow-right";
 import { GlobeIcon } from "@/app/assets/globe";
+import { Metrom } from "@/app/assets/logos/metrom";
 
 interface JobsProps {
     dictionary: Dictionary["jobs"];
@@ -13,19 +14,28 @@ interface JobsProps {
 
 export function Jobs({ dictionary }: JobsProps) {
     return (
-        <div className="w-full flex flex-col items-start gap-10">
-            <h1 className="font-sans leading-10 text-4xl theme-text font-semibold text-center uppercase">
-                {dictionary.title}
-            </h1>
-            <div className="w-full flex flex-col gap-10">
-                <Card className="flex flex-col gap-2.5 !p-5">
-                    <h2 className="text-xl2 leading-8 font-medium font-sans theme-text uppercase">
-                        {dictionary.about.title}
-                    </h2>
-                    <Typography size="lg" className="max-w-[420px]">
-                        {dictionary.about.metrom}
+        <div className="w-full flex flex-col items-center gap-14">
+            <section className="w-full flex flex-col gap-5 items-center text-center justify-center max-w-screen-2xl p-8 md:p-16 rounded-4xl theme-surface">
+                <Metrom className="mb-5 text-black dark:text-white" />
+                <div className="flex flex-col items-center">
+                    <Typography
+                        size="xl5"
+                        className="text-[2.5rem]! md:text-5xl! leading-none! font-bold! max-w-2xl whitespace-pre-line"
+                    >
+                        {dictionary.title1}
                     </Typography>
-                </Card>
+                    <Typography
+                        size="xl5"
+                        className="text-[2.5rem]! md:text-5xl! leading-none! font-bold! max-w-4xl whitespace-pre-line"
+                    >
+                        {dictionary.title2}
+                    </Typography>
+                </div>
+                <h2 className="text-xl2 leading-8 max-w-xl font-sans text-gray-600 dark:text-gray-400">
+                    {dictionary.about.metrom}
+                </h2>
+            </section>
+            <div className="w-full flex flex-col gap-10 max-w-screen-md">
                 <div className="w-full flex flex-col gap-3">
                     <h2 className="text-xl2 leading-8 font-medium font-sans theme-text uppercase">
                         {dictionary.openPositions}

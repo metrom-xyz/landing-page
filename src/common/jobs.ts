@@ -28,7 +28,6 @@ export const JOBS_OPENINGS: JobDescriptor[] = [
             "Basic understanding of Rust (not required, but a plus)",
         ],
         workingConditions: [
-            "Compensation is hourly and paid based on time tracked",
             "Flexible working hours, with the expectation of longer days during peak integration periods",
             "Remote and distributed team — we prefer candidates who are highly self-driven, take initiative, and follow through on tasks independently",
             "Availability for at least 4-5 hours per day in UTC+1 timezone is preferred",
