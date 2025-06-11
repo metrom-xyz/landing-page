@@ -62,10 +62,6 @@ export function Job({
                 </div>
                 <Card className="flex flex-col gap-6 !p-5">
                     <Section
-                        title={dictionary.aboutMetrom}
-                        description={dictionary.metrom}
-                    />
-                    <Section
                         title={dictionary.roleOverview}
                         description={role}
                     />
@@ -88,6 +84,10 @@ export function Job({
                     <Section
                         title={dictionary.aboutTheTeam}
                         description={dictionary.team}
+                    />
+                    <Section
+                        title={dictionary.aboutMetrom}
+                        description={dictionary.metrom}
                     />
                 </Card>
                 <div className="flex flex-col md:flex-row gap-3">
