@@ -31,6 +31,7 @@ import { LightLinkPhoenix } from "@/app/assets/logos/chains/lightlink-phoenix";
 import { Hemi } from "@/app/assets/logos/chains/hemi";
 import { Amped } from "@/app/assets/logos/dexes/amped";
 import { Swell } from "@/app/assets/logos/chains/swell";
+import { Lens } from "@/app/assets/logos/chains/lens";
 
 const CHAINS: EntityProps[] = [
     {
@@ -80,6 +81,10 @@ const CHAINS: EntityProps[] = [
     {
         name: "Hemi",
         icon: Hemi,
+    },
+    {
+        name: "Lens",
+        icon: Lens,
     },
 ];
 
