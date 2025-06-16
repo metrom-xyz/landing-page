@@ -154,7 +154,7 @@ interface PartnersProps {
 
 export function Ecosystem({ dictionary }: PartnersProps) {
     return (
-        <section className="w-full md:px-28">
+        <section id="ecosystem" className="w-full md:px-28">
             <div className="w-full flex flex-col gap-10 px-4 py-7 md:p-10 theme-surface rounded-4xl">
                 <h3 className="font-sans leading-10 text-4xl theme-text font-semibold text-center">
                     {dictionary.title}

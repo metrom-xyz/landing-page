@@ -45,7 +45,7 @@ export interface ArticlesProps {
 
 export function Articles({ dictionary }: ArticlesProps) {
     return (
-        <div className="flex gap-5 justify-center flex-wrap">
+        <section id="articles" className="flex gap-5 justify-center flex-wrap">
             {ARTICLES.map((article, index) => (
                 <Article
                     key={index}
@@ -55,6 +55,6 @@ export function Articles({ dictionary }: ArticlesProps) {
                     dictionary={dictionary}
                 />
             ))}
-        </div>
+        </section>
     );
 }
