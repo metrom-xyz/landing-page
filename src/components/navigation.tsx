@@ -13,7 +13,7 @@ interface NavigationProps {
 
 export function Navigation({ links, logo }: NavigationProps) {
     return (
-        <div className="w-full flex justify-center gap-2 sm:gap-4 -mb-14 sm:-mb-5">
+        <div className="w-fit flex justify-center gap-2 sm:gap-4 -mb-14 sm:-mb-5 theme-surface p-4 rounded-xl">
             {logo && (
                 <Link href="/">
                     <MetromCompact />
