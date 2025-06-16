@@ -1,4 +1,6 @@
-export function LinesIllustration(props: any) {
+import { SVGIconProps } from "@/types";
+
+export function LinesIllustration(props: SVGIconProps) {
     return (
         <svg
             width="1728"
