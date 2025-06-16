@@ -139,7 +139,7 @@ export function Faqs({ dictionary }: FaqsProps) {
     ];
 
     return (
-        <div className="w-full flex flex-col gap-1 md:px-28">
+        <section id="faqs" className="w-full flex flex-col gap-1 md:px-28">
             <div className="text-center mb-8 text-[30px] font-bold theme-text">
                 FAQs
             </div>
@@ -163,6 +163,6 @@ export function Faqs({ dictionary }: FaqsProps) {
                     </div>
                 </Accordion>
             ))}
-        </div>
+        </section>
     );
 }

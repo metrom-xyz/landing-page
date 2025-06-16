@@ -15,7 +15,10 @@ interface FeaturesProps {
 
 export function Features({ dictionary }: FeaturesProps) {
     return (
-        <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-16 md:px-28">
+        <section
+            id="features"
+            className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-16 md:px-28"
+        >
             <Feature
                 icon={FlexibleIcon}
                 title={dictionary.efficient.title}
@@ -46,6 +49,6 @@ export function Features({ dictionary }: FeaturesProps) {
                 title={dictionary.flow.title}
                 description={dictionary.flow.description}
             />
-        </div>
+        </section>
     );
 }
