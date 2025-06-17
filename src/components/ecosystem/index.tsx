@@ -2,9 +2,7 @@
 
 import { Dictionary } from "@/types";
 import { Base } from "@/app/assets/logos/chains/base";
-import { Mode } from "@/app/assets/logos/chains/mode";
 import { Algebra } from "@/app/assets/logos/dexes/algebra";
-import { Mantle } from "@/app/assets/logos/chains/mantle";
 import { EntitiesGroup } from "./entities-group";
 import { Entity, EntityProps } from "./entity";
 import { Button } from "@metrom-xyz/ui";
@@ -37,14 +35,6 @@ const CHAINS: EntityProps[] = [
     {
         name: "Base",
         icon: Base,
-    },
-    {
-        name: "Mode",
-        icon: Mode,
-    },
-    {
-        name: "Mantle",
-        icon: Mantle,
     },
     {
         name: "Taiko",
