@@ -16,7 +16,7 @@ export function Lens(props: SVGIconProps) {
                 mask="url(#lens-logo-mask)"
                 width="80"
                 height="20"
-                fill="currentColor"
+                fill="#ffffff"
                 id="rect1"
                 x="0"
                 y="0"
