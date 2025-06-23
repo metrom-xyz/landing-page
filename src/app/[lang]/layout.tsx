@@ -6,8 +6,6 @@ import Fathom from "@/components/fathom";
 import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/footer";
 import { getDictionary } from "@/dictionaries";
-import { CirclesIllustration } from "../assets/circles-illustration";
-import { LinesIllustration } from "../assets/lines-illustration";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -60,10 +58,10 @@ export default async function RootLayout({
             <body>
                 <ThemeProvider attribute="data-theme">
                     <Fathom />
-                    <div className="flex min-h-screen flex-col gap-[4.75rem] justify-between items-center px-4 py-6 md:px-12 md:py-15">
+                    <div className="flex min-h-screen flex-col gap-16 justify-between items-center px-4 py-6 md:px-12 md:py-15 bg-[url('/images/bg-illustration-mobile.svg')] sm:bg-[url('/images/bg-illustration-desktop.svg')] bg-top bg-origin-border bg-contain bg-no-repeat">
                         {/* TODO: use backround images once we implement the new landing page design */}
-                        <CirclesIllustration className="absolute max-w-screen-5xl w-full h-full -z-10 -top-28" />
-                        <LinesIllustration className="absolute max-w-screen-5xl w-full h-full -z-10 -top-1/3 sm:-top-28" />
+                        {/* <BgIllustrationDesktop className="absolute max-w-screen-5xl w-full h-full -z-10 -top-28 " />
+                        <BgIllustrationMobile className="absolute w-full h-full -z-10 -top-28 block sm:hidden" /> */}
                         <div className="w-full">{children}</div>
                         <Footer dictionary={dictionary.footer} />
                     </div>

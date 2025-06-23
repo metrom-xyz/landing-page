@@ -118,6 +118,7 @@
         "applications": "Applications",
         "project": "Project"
     },
+    "navigation": { "back": "Back" },
     "footer": {
         "socials": {
             "github": "Github",
