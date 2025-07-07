@@ -30,6 +30,8 @@ import { Hemi } from "@/app/assets/logos/chains/hemi";
 import { Amped } from "@/app/assets/logos/dexes/amped";
 import { Swell } from "@/app/assets/logos/chains/swell";
 import { Lens } from "@/app/assets/logos/chains/lens";
+import { Carbon } from "@/app/assets/logos/dexes/carbon";
+import { Sei } from "@/app/assets/logos/chains/sei";
 
 const CHAINS: EntityProps[] = [
     {
@@ -76,6 +78,10 @@ const CHAINS: EntityProps[] = [
         name: "Lens",
         icon: Lens,
     },
+    {
+        name: "Sei",
+        icon: Sei,
+    },
 ];
 
 const DEXES: EntityProps[] = [
@@ -110,6 +116,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Velodrome",
         icon: Velodrome,
+    },
+    {
+        name: "Carbon",
+        icon: Carbon,
     },
     {
         name: "Curve",
