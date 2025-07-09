@@ -122,13 +122,12 @@ const DEXES: EntityProps[] = [
         icon: Carbon,
     },
     {
-        name: "Curve",
-        icon: Curve,
-        soon: true,
-    },
-    {
         name: "Amped",
         icon: Amped,
+    },
+    {
+        name: "Curve",
+        icon: Curve,
         soon: true,
     },
 ];
