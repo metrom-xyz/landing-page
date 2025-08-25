@@ -16,7 +16,6 @@ import { Quill } from "@/app/assets/logos/liquity-v2-platforms/quill";
 import { Ebisu } from "@/app/assets/logos/liquity-v2-platforms/ebisu";
 import { Curve } from "@/app/assets/logos/dexes/curve";
 import { Gnosis } from "@/app/assets/logos/chains/gnosis";
-import { Form } from "@/app/assets/logos/chains/form";
 import { Sonic } from "@/app/assets/logos/chains/sonic";
 import { Uniswap } from "@/app/assets/logos/dexes/uniswap";
 import { BaseSwap } from "@/app/assets/logos/dexes/baseswap";
@@ -32,6 +31,8 @@ import { Swell } from "@/app/assets/logos/chains/swell";
 import { Lens } from "@/app/assets/logos/chains/lens";
 import { Carbon } from "@/app/assets/logos/dexes/carbon";
 import { Sei } from "@/app/assets/logos/chains/sei";
+import { Lumia } from "@/app/assets/logos/chains/lumia";
+import { Morphex } from "@/app/assets/logos/dexes/morphex";
 
 const CHAINS: EntityProps[] = [
     {
@@ -55,8 +56,8 @@ const CHAINS: EntityProps[] = [
         icon: Gnosis,
     },
     {
-        name: "Form",
-        icon: Form,
+        name: "Lumia",
+        icon: Lumia,
     },
     {
         name: "Sonic",
@@ -124,6 +125,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Amped",
         icon: Amped,
+    },
+    {
+        name: "Morphex",
+        icon: Morphex,
     },
     {
         name: "Curve",
