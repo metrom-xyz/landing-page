@@ -163,7 +163,7 @@ const LIQUITY_V2_PLATFORMS: EntityProps[] = [
     },
 ];
 
-const MONEY_MARKET_PLATFORMS: EntityProps[] = [
+const LENDING_PLATFORMS: EntityProps[] = [
     {
         name: "Aave",
         icon: Aave,
@@ -192,13 +192,13 @@ export function Ecosystem({ dictionary }: PartnersProps) {
                             <Entity key={amm.name} {...amm} />
                         ))}
                     </EntitiesGroup>
-                    <EntitiesGroup title={dictionary.liquityV2s}>
+                    <EntitiesGroup title={dictionary.moneyMarkets}>
                         {LIQUITY_V2_PLATFORMS.map((liquityV2) => (
                             <Entity key={liquityV2.name} {...liquityV2} />
                         ))}
                     </EntitiesGroup>
-                    <EntitiesGroup title={dictionary.moneyMarkets}>
-                        {MONEY_MARKET_PLATFORMS.map((platform) => (
+                    <EntitiesGroup title={dictionary.lending}>
+                        {LENDING_PLATFORMS.map((platform) => (
                             <Entity key={platform.name} {...platform} />
                         ))}
                     </EntitiesGroup>

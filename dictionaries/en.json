@@ -35,9 +35,9 @@
         "ecosystem": {
             "title": "Ecosystem",
             "chains": "Chains",
-            "dexes": "DEXes",
-            "liquityV2s": "Liquity V2s",
+            "dexes": "Dexes",
             "moneyMarkets": "Money markets",
+            "lending": "Lending",
             "auditors": "Audits",
             "add": "Partner with Us"
         },
