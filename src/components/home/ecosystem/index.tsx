@@ -14,7 +14,6 @@ import { Unagi } from "@/app/assets/logos/dexes/unagi";
 import { Telos } from "@/app/assets/logos/chains/telos";
 import { Quill } from "@/app/assets/logos/liquity-v2-platforms/quill";
 import { Ebisu } from "@/app/assets/logos/liquity-v2-platforms/ebisu";
-import { Curve } from "@/app/assets/logos/dexes/curve";
 import { Gnosis } from "@/app/assets/logos/chains/gnosis";
 import { Sonic } from "@/app/assets/logos/chains/sonic";
 import { Uniswap } from "@/app/assets/logos/dexes/uniswap";
@@ -140,11 +139,6 @@ const DEXES: EntityProps[] = [
     {
         name: "Izumi",
         icon: Izumi,
-    },
-    {
-        name: "Curve",
-        icon: Curve,
-        soon: true,
     },
 ];
 
