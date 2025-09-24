@@ -14,7 +14,6 @@ import { Unagi } from "@/app/assets/logos/dexes/unagi";
 import { Telos } from "@/app/assets/logos/chains/telos";
 import { Quill } from "@/app/assets/logos/liquity-v2-platforms/quill";
 import { Ebisu } from "@/app/assets/logos/liquity-v2-platforms/ebisu";
-import { Curve } from "@/app/assets/logos/dexes/curve";
 import { Gnosis } from "@/app/assets/logos/chains/gnosis";
 import { Sonic } from "@/app/assets/logos/chains/sonic";
 import { Uniswap } from "@/app/assets/logos/dexes/uniswap";
@@ -33,8 +32,15 @@ import { Carbon } from "@/app/assets/logos/dexes/carbon";
 import { Sei } from "@/app/assets/logos/chains/sei";
 import { Lumia } from "@/app/assets/logos/chains/lumia";
 import { Morphex } from "@/app/assets/logos/dexes/morphex";
+import { Aptos } from "@/app/assets/logos/chains/aptos";
+import { Izumi } from "@/app/assets/logos/dexes/izumi";
+import { Aave } from "@/app/assets/logos/aave";
 
 const CHAINS: EntityProps[] = [
+    {
+        name: "Aptos",
+        icon: Aptos,
+    },
     {
         name: "Base",
         icon: Base,
@@ -131,9 +137,8 @@ const DEXES: EntityProps[] = [
         icon: Morphex,
     },
     {
-        name: "Curve",
-        icon: Curve,
-        soon: true,
+        name: "Izumi",
+        icon: Izumi,
     },
 ];
 
@@ -149,6 +154,13 @@ const LIQUITY_V2_PLATFORMS: EntityProps[] = [
     {
         name: "Orki",
         icon: Orki,
+    },
+];
+
+const LENDING_PLATFORMS: EntityProps[] = [
+    {
+        name: "Aave",
+        icon: Aave,
     },
 ];
 
@@ -174,9 +186,14 @@ export function Ecosystem({ dictionary }: PartnersProps) {
                             <Entity key={amm.name} {...amm} />
                         ))}
                     </EntitiesGroup>
-                    <EntitiesGroup title={dictionary.liquityV2}>
+                    <EntitiesGroup title={dictionary.moneyMarkets}>
                         {LIQUITY_V2_PLATFORMS.map((liquityV2) => (
                             <Entity key={liquityV2.name} {...liquityV2} />
+                        ))}
+                    </EntitiesGroup>
+                    <EntitiesGroup title={dictionary.lending}>
+                        {LENDING_PLATFORMS.map((platform) => (
+                            <Entity key={platform.name} {...platform} />
                         ))}
                     </EntitiesGroup>
                 </div>
