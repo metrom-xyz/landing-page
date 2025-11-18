@@ -35,6 +35,7 @@ import { Morphex } from "@/app/assets/logos/dexes/morphex";
 import { Aptos } from "@/app/assets/logos/chains/aptos";
 import { Izumi } from "@/app/assets/logos/dexes/izumi";
 import { Aave } from "@/app/assets/logos/aave";
+import { Hydrex } from "@/app/assets/logos/dexes/hydrex";
 
 const CHAINS: EntityProps[] = [
     {
@@ -139,6 +140,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Izumi",
         icon: Izumi,
+    },
+    {
+        name: "Hydrex",
+        icon: Hydrex,
     },
 ];
 
