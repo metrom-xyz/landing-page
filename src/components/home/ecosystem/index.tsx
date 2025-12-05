@@ -36,6 +36,13 @@ import { Aptos } from "@/app/assets/logos/chains/aptos";
 import { Izumi } from "@/app/assets/logos/dexes/izumi";
 import { Aave } from "@/app/assets/logos/aave";
 import { Hydrex } from "@/app/assets/logos/dexes/hydrex";
+import { Arbitrum } from "@/app/assets/logos/chains/arbitrum";
+import { Plasma } from "@/app/assets/logos/chains/plasma";
+import { Balancer } from "@/app/assets/logos/dexes/balancer";
+import { Lithos } from "@/app/assets/logos/dexes/lithos";
+import { Quickswap } from "@/app/assets/logos/dexes/quickswap";
+import { Ambient } from "@/app/assets/logos/dexes/ambient";
+import { Honeypop } from "@/app/assets/logos/dexes/honeypop";
 
 const CHAINS: EntityProps[] = [
     {
@@ -89,6 +96,14 @@ const CHAINS: EntityProps[] = [
     {
         name: "Sei",
         icon: Sei,
+    },
+    {
+        name: "Arbitrum",
+        icon: Arbitrum,
+    },
+    {
+        name: "Plasma",
+        icon: Plasma,
     },
 ];
 
@@ -144,6 +159,26 @@ const DEXES: EntityProps[] = [
     {
         name: "Hydrex",
         icon: Hydrex,
+    },
+    {
+        name: "Balancer",
+        icon: Balancer,
+    },
+    {
+        name: "Lithos",
+        icon: Lithos,
+    },
+    {
+        name: "Quickswap",
+        icon: Quickswap,
+    },
+    {
+        name: "Ambient",
+        icon: Ambient,
+    },
+    {
+        name: "Honeypop",
+        icon: Honeypop,
     },
 ];
 
