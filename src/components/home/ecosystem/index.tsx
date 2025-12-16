@@ -43,6 +43,7 @@ import { Lithos } from "@/app/assets/logos/dexes/lithos";
 import { Quickswap } from "@/app/assets/logos/dexes/quickswap";
 import { Ambient } from "@/app/assets/logos/dexes/ambient";
 import { Honeypop } from "@/app/assets/logos/dexes/honeypop";
+import { Saga } from "@/app/assets/logos/chains/saga";
 
 const CHAINS: EntityProps[] = [
     {
@@ -104,6 +105,10 @@ const CHAINS: EntityProps[] = [
     {
         name: "Plasma",
         icon: Plasma,
+    },
+    {
+        name: "Saga",
+        icon: Saga,
     },
 ];
 
