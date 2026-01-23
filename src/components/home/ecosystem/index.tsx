@@ -44,6 +44,7 @@ import { Quickswap } from "@/app/assets/logos/dexes/quickswap";
 import { Ambient } from "@/app/assets/logos/dexes/ambient";
 import { Honeypop } from "@/app/assets/logos/dexes/honeypop";
 import { Saga } from "@/app/assets/logos/chains/saga";
+import { Hyperion } from "@/app/assets/logos/dexes/hyperion";
 
 const CHAINS: EntityProps[] = [
     {
@@ -184,6 +185,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Honeypop",
         icon: Honeypop,
+    },
+    {
+        name: "Hyperion",
+        icon: Hyperion,
     },
 ];
 
