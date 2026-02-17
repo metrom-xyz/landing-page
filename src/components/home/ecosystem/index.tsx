@@ -45,6 +45,13 @@ import { Ambient } from "@/app/assets/logos/dexes/ambient";
 import { Honeypop } from "@/app/assets/logos/dexes/honeypop";
 import { Saga } from "@/app/assets/logos/chains/saga";
 import { Hyperion } from "@/app/assets/logos/dexes/hyperion";
+import { Stabull } from "@/app/assets/logos/dexes/stabull";
+import { Ploutos } from "@/app/assets/logos/ploutos";
+import { Thala } from "@/app/assets/logos/dexes/thala";
+import { Odyssey } from "@/app/assets/logos/odyssey";
+import { Steer } from "@/app/assets/logos/steer";
+import { Goblin } from "@/app/assets/logos/goblin";
+import { Ichi } from "@/app/assets/logos/ichi";
 
 const CHAINS: EntityProps[] = [
     {
@@ -190,6 +197,14 @@ const DEXES: EntityProps[] = [
         name: "Hyperion",
         icon: Hyperion,
     },
+    {
+        name: "Stabull",
+        icon: Stabull,
+    },
+    {
+        name: "Thala",
+        icon: Thala,
+    },
 ];
 
 const LIQUITY_V2_PLATFORMS: EntityProps[] = [
@@ -211,6 +226,29 @@ const LENDING_PLATFORMS: EntityProps[] = [
     {
         name: "Aave",
         icon: Aave,
+    },
+    {
+        name: "Ploutos",
+        icon: Ploutos,
+    },
+];
+
+const VAULTS: EntityProps[] = [
+    {
+        name: "Odyssey",
+        icon: Odyssey,
+    },
+    {
+        name: "Steer",
+        icon: Steer,
+    },
+    {
+        name: "Goblin",
+        icon: Goblin,
+    },
+    {
+        name: "Ichi",
+        icon: Ichi,
     },
 ];
 
@@ -243,6 +281,11 @@ export function Ecosystem({ dictionary }: PartnersProps) {
                     </EntitiesGroup>
                     <EntitiesGroup title={dictionary.lending}>
                         {LENDING_PLATFORMS.map((platform) => (
+                            <Entity key={platform.name} {...platform} />
+                        ))}
+                    </EntitiesGroup>
+                    <EntitiesGroup title={dictionary.vaults}>
+                        {VAULTS.map((platform) => (
                             <Entity key={platform.name} {...platform} />
                         ))}
                     </EntitiesGroup>
