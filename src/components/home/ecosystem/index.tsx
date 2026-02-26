@@ -46,7 +46,6 @@ import { Honeypop } from "@/app/assets/logos/dexes/honeypop";
 import { Saga } from "@/app/assets/logos/chains/saga";
 import { Hyperion } from "@/app/assets/logos/dexes/hyperion";
 import { Stabull } from "@/app/assets/logos/dexes/stabull";
-import { Ploutos } from "@/app/assets/logos/ploutos";
 import { Thala } from "@/app/assets/logos/dexes/thala";
 import { Odyssey } from "@/app/assets/logos/odyssey";
 import { Steer } from "@/app/assets/logos/steer";
@@ -226,10 +225,6 @@ const LENDING_PLATFORMS: EntityProps[] = [
     {
         name: "Aave",
         icon: Aave,
-    },
-    {
-        name: "Ploutos",
-        icon: Ploutos,
     },
 ];
 
