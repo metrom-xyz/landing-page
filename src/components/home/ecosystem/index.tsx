@@ -51,6 +51,8 @@ import { Odyssey } from "@/app/assets/logos/odyssey";
 import { Steer } from "@/app/assets/logos/steer";
 import { Goblin } from "@/app/assets/logos/goblin";
 import { Ichi } from "@/app/assets/logos/ichi";
+import { Purrlend } from "@/app/assets/logos/purrlend";
+import { MegaEth } from "@/app/assets/logos/chains/megaeth";
 
 const CHAINS: EntityProps[] = [
     {
@@ -116,6 +118,10 @@ const CHAINS: EntityProps[] = [
     {
         name: "Saga",
         icon: Saga,
+    },
+    {
+        name: "MegaETH",
+        icon: MegaEth,
     },
 ];
 
@@ -225,6 +231,10 @@ const LENDING_PLATFORMS: EntityProps[] = [
     {
         name: "Aave",
         icon: Aave,
+    },
+    {
+        name: "Purrlend",
+        icon: Purrlend,
     },
 ];
 
