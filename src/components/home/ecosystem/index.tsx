@@ -53,6 +53,7 @@ import { Goblin } from "@/app/assets/logos/goblin";
 import { Ichi } from "@/app/assets/logos/ichi";
 import { Purrlend } from "@/app/assets/logos/purrlend";
 import { MegaEth } from "@/app/assets/logos/chains/megaeth";
+import { Yearn } from "@/app/assets/logos/yearn";
 
 const CHAINS: EntityProps[] = [
     {
@@ -239,6 +240,10 @@ const LENDING_PLATFORMS: EntityProps[] = [
 ];
 
 const VAULTS: EntityProps[] = [
+    {
+        name: "Yearn",
+        icon: Yearn,
+    },
     {
         name: "Odyssey",
         icon: Odyssey,

@@ -1,8 +1,6 @@
-import Image from "next/image";
-import goblinLogo from "./goblin.webp";
+import { SVGIconProps } from "@/types";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function Goblin(props: any) {
+export function Goblin(props: SVGIconProps) {
     return (
         <svg
             width="94"

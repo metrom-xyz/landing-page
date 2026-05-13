@@ -1,0 +1,2 @@
+minimumReleaseAge: 8400 # 7 days in minutes
+blockExoticSubdeps: true
