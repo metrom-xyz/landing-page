@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { BASE_URL } from "@/common";
 import { i18n } from "@/i18n-config";
-import Fathom from "@/components/fathom";
 import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/footer";
 import { getDictionary } from "@/dictionaries";
+import { UMAMI_WEBSITE_ID } from "@/env";
 
 import "@fontsource/ibm-plex-sans/400.css";
 import "@fontsource/ibm-plex-sans/500.css";
@@ -55,9 +55,16 @@ export default async function RootLayout({
             suppressHydrationWarning
             className="theme-bg scroll-smooth scroll-pt-10"
         >
+            <head>
+                <script
+                    defer
+                    src="https://umami.metrom.xyz/s.js"
+                    data-website-id={UMAMI_WEBSITE_ID}
+                    data-domains="www.metrom.xyz"
+                ></script>
+            </head>
             <body>
                 <ThemeProvider attribute="data-theme">
-                    <Fathom />
                     <div className="flex min-h-screen flex-col gap-16 justify-between items-center px-4 py-6 md:px-12 md:py-15 bg-[url('/images/bg-illustration-mobile.svg')] sm:bg-[url('/images/bg-illustration-desktop.svg')] bg-top bg-origin-border bg-contain bg-no-repeat">
                         {/* TODO: use backround images once we implement the new landing page design */}
                         {/* <BgIllustrationDesktop className="absolute max-w-screen-5xl w-full h-full -z-10 -top-28 " />
