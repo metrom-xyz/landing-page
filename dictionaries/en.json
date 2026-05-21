@@ -39,6 +39,7 @@
             "moneyMarkets": "Money markets",
             "lending": "Lending",
             "vaults": "Vaults",
+            "erc20TokenHolding": "ERC20 token holding",
             "auditors": "Audits",
             "add": "Partner with Us"
         },

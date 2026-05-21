@@ -51,9 +51,9 @@ import { Odyssey } from "@/app/assets/logos/odyssey";
 import { Steer } from "@/app/assets/logos/steer";
 import { Goblin } from "@/app/assets/logos/goblin";
 import { Ichi } from "@/app/assets/logos/ichi";
-import { Purrlend } from "@/app/assets/logos/purrlend";
 import { MegaEth } from "@/app/assets/logos/chains/megaeth";
 import { Yearn } from "@/app/assets/logos/yearn";
+import { TokensIcon } from "@/app/assets/tokens-icon";
 
 const CHAINS: EntityProps[] = [
     {
@@ -233,10 +233,6 @@ const LENDING_PLATFORMS: EntityProps[] = [
         name: "Aave",
         icon: Aave,
     },
-    {
-        name: "Purrlend",
-        icon: Purrlend,
-    },
 ];
 
 const VAULTS: EntityProps[] = [
@@ -262,6 +258,13 @@ const VAULTS: EntityProps[] = [
     },
 ];
 
+const HOLD_FUNGIBLE_ASSETS: EntityProps[] = [
+    {
+        name: "",
+        icon: TokensIcon,
+    },
+];
+
 interface PartnersProps {
     dictionary: Dictionary["home"]["ecosystem"];
 }
@@ -273,7 +276,7 @@ export function Ecosystem({ dictionary }: PartnersProps) {
                 <h3 className="font-sans leading-10 text-4xl theme-text font-semibold text-center">
                     {dictionary.title}
                 </h3>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 flex-wrap">
+                <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-6 flex-wrap items-stretch">
                     <EntitiesGroup title={dictionary.chains}>
                         {CHAINS.map((chain) => (
                             <Entity key={chain.name} {...chain} />
@@ -287,6 +290,11 @@ export function Ecosystem({ dictionary }: PartnersProps) {
                     <EntitiesGroup title={dictionary.moneyMarkets}>
                         {LIQUITY_V2_PLATFORMS.map((liquityV2) => (
                             <Entity key={liquityV2.name} {...liquityV2} />
+                        ))}
+                    </EntitiesGroup>
+                    <EntitiesGroup title={dictionary.erc20TokenHolding}>
+                        {HOLD_FUNGIBLE_ASSETS.map((platform) => (
+                            <Entity key={platform.name} {...platform} />
                         ))}
                     </EntitiesGroup>
                     <EntitiesGroup title={dictionary.lending}>
