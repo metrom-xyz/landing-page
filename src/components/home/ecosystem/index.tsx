@@ -54,6 +54,9 @@ import { Ichi } from "@/app/assets/logos/ichi";
 import { MegaEth } from "@/app/assets/logos/chains/megaeth";
 import { Yearn } from "@/app/assets/logos/yearn";
 import { TokensIcon } from "@/app/assets/tokens-icon";
+import { Solana } from "@/app/assets/logos/chains/solana";
+import { Sui } from "@/app/assets/logos/chains/sui";
+import { Orca } from "@/app/assets/logos/dexes/orca";
 
 const CHAINS: EntityProps[] = [
     {
@@ -123,6 +126,14 @@ const CHAINS: EntityProps[] = [
     {
         name: "MegaETH",
         icon: MegaEth,
+    },
+    {
+        name: "Solana",
+        icon: Solana,
+    },
+    {
+        name: "Sui",
+        icon: Sui,
     },
 ];
 
@@ -210,6 +221,10 @@ const DEXES: EntityProps[] = [
     {
         name: "Thala",
         icon: Thala,
+    },
+    {
+        name: "Orca",
+        icon: Orca,
     },
 ];
 
