@@ -1,6 +1,6 @@
-import { SVGIconProps } from "@/types";
+import type { SVGIconProps } from "@/types";
 import { Chip, Typography } from "@metrom-xyz/ui";
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 
 export interface EntityProps {
     icon: FunctionComponent<SVGIconProps>;

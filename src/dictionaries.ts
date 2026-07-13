@@ -1,7 +1,7 @@
 import "server-only";
 import type { Locale } from "@/i18n-config";
 
-import dictionary from "../dictionaries/en.json";
+import type dictionary from "../dictionaries/en.json";
 
 const dictionaries: Record<Locale, () => Promise<typeof dictionary>> = {
     en: () =>

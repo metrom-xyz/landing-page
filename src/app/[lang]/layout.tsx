@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { BASE_URL } from "@/common";
 import { i18n } from "@/i18n-config";
 import { ThemeProvider } from "next-themes";

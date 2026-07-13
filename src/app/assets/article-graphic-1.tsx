@@ -1,4 +1,4 @@
-import { SVGIconProps } from "@/types";
+import type { SVGIconProps } from "@/types";
 
 export function ArticleGraphic1(props: SVGIconProps) {
     return (

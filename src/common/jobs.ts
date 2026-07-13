@@ -1,4 +1,4 @@
-import { JobDescriptor } from "@/types";
+import type { JobDescriptor } from "@/types";
 
 export const JOBS_OPENINGS: JobDescriptor[] = [
     {

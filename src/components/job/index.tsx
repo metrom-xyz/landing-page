@@ -2,7 +2,7 @@
 
 import { BriefcaseIcon } from "@/app/assets/briefcase";
 import { GlobeIcon } from "@/app/assets/globe";
-import { Dictionary, JobDescriptor } from "@/types";
+import type { Dictionary, JobDescriptor } from "@/types";
 import { Card, TextField, Typography } from "@metrom-xyz/ui";
 import { ListSection } from "../jobs/list-section";
 import { Section } from "../jobs/section";

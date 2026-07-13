@@ -1,4 +1,4 @@
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Navigation } from "../navigation";
 import { Articles } from "./articles";
 import { Ecosystem } from "./ecosystem";

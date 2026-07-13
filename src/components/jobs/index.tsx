@@ -1,6 +1,6 @@
 "use client";
 
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
 import { JOBS_OPENINGS } from "@/common/jobs";
 import Link from "next/link";

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRightIcon } from "@/app/assets/arrow-right";
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
