@@ -1,4 +1,5 @@
-import { i18n, Locale } from "@/i18n-config";
+import type { Locale } from "@/i18n-config";
+import { i18n } from "@/i18n-config";
 import { notFound } from "next/navigation";
 
 interface Params {

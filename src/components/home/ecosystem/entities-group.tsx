@@ -1,5 +1,5 @@
 import { Typography } from "@metrom-xyz/ui";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface EntitiesGroupProps {
     title: string;

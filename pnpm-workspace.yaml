@@ -1,7 +1,7 @@
 packages:
   - "."
 
-minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAge: 8640 # 6 days in minutes
 blockExoticSubdeps: true
 allowBuilds:
   sharp: false

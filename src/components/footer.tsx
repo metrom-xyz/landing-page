@@ -12,7 +12,7 @@ import {
     TELEGRAM_LINK,
     X_ACCOUNT_LINK,
 } from "@/common";
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
 import { ThemeSwitch } from "./theme-switch";
 import Link from "next/link";

@@ -1,5 +1,5 @@
 import type { SVGProps } from "react";
-import { getDictionary } from "./dictionaries";
+import type { getDictionary } from "./dictionaries";
 
 export enum Theme {
     Dark = "dark",

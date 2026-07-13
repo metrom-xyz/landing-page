@@ -1,18 +1,31 @@
-import { FlatCompat } from "@eslint/eslintrc";
+import eslint from "@eslint/js";
+import { defineConfig } from "eslint/config";
+import tseslint from "typescript-eslint";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import prettierConfig from "eslint-config-prettier/flat";
 
-const compat = new FlatCompat({
-    baseDirectory: import.meta.dirname,
-});
-
-const eslintConfig = [
-    ...compat.config({
-        extends: [
-            "next/core-web-vitals",
-            "plugin:prettier/recommended",
-            "next/typescript",
-        ],
-        rules: { "prettier/prettier": ["error", { endOfLine: "auto" }] },
-    }),
-];
-
-export default eslintConfig;
+export default defineConfig(
+    ...nextVitals,
+    prettierConfig,
+    eslint.configs.recommended,
+    tseslint.configs.recommended,
+    {
+        languageOptions: {
+            parserOptions: {
+                tsconfigRootDir: import.meta.dirname,
+            },
+        },
+        settings: {
+            next: {
+                rootDir: import.meta.dirname,
+            },
+            // FIXME: remove once this is solved https://github.com/vercel/next.js/issues/89764
+            react: {
+                version: "19.2",
+            },
+        },
+        rules: {
+            "react-hooks/set-state-in-effect": "off",
+        },
+    },
+);

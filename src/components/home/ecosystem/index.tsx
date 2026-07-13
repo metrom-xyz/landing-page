@@ -1,10 +1,11 @@
 "use client";
 
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Base } from "@/app/assets/logos/chains/base";
 import { Algebra } from "@/app/assets/logos/dexes/algebra";
 import { EntitiesGroup } from "./entities-group";
-import { Entity, EntityProps } from "./entity";
+import type { EntityProps } from "./entity";
+import { Entity } from "./entity";
 import { Button } from "@metrom-xyz/ui";
 import { DISCORD_LINK } from "@/common";
 import { PlusSquareIcon } from "@/app/assets/plus-square-icon";

@@ -1,7 +1,7 @@
 import { Button, Typography } from "@metrom-xyz/ui";
-import { ArticlesProps } from ".";
-import { FunctionComponent } from "react";
-import { SVGIconProps } from "@/types";
+import type { ArticlesProps } from ".";
+import type { FunctionComponent } from "react";
+import type { SVGIconProps } from "@/types";
 import { ExternalIcon } from "@/app/assets/external-icon";
 
 interface ArticleProps {

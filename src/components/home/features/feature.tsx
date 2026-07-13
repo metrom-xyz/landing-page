@@ -1,8 +1,8 @@
 "use client";
 
-import { SVGIconProps } from "@/types";
+import type { SVGIconProps } from "@/types";
 import { Typography } from "@metrom-xyz/ui";
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 
 interface FeatureProps {
     icon: FunctionComponent<SVGIconProps>;

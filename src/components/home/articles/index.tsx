@@ -1,6 +1,6 @@
 "use client";
 
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { Article } from "./article";
 import { ArticleGraphic1 } from "@/app/assets/article-graphic-1";
 import { ArticleGraphic2 } from "@/app/assets/article-graphic-2";

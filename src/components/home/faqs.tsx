@@ -1,9 +1,9 @@
 "use client";
 
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Accordion, Typography } from "@metrom-xyz/ui";
 import { DOCUMENTATION_LINK, GITHUB_ISSUES_LINK } from "@/common";
-import { Dictionary } from "@/types";
+import type { Dictionary } from "@/types";
 import { interpolate } from "@/utils";
 
 interface FaqsProps {
