@@ -27,7 +27,6 @@ import { Oku } from "@/app/assets/logos/dexes/oku";
 import { LightLinkPhoenix } from "@/app/assets/logos/chains/lightlink-phoenix";
 import { Hemi } from "@/app/assets/logos/chains/hemi";
 import { Amped } from "@/app/assets/logos/dexes/amped";
-import { Swell } from "@/app/assets/logos/chains/swell";
 import { Lens } from "@/app/assets/logos/chains/lens";
 import { Carbon } from "@/app/assets/logos/dexes/carbon";
 import { Sei } from "@/app/assets/logos/chains/sei";
@@ -55,6 +54,7 @@ import { Ichi } from "@/app/assets/logos/ichi";
 import { MegaEth } from "@/app/assets/logos/chains/megaeth";
 import { Yearn } from "@/app/assets/logos/yearn";
 import { TokensIcon } from "@/app/assets/tokens-icon";
+import { Ink } from "@/app/assets/logos/chains/ink";
 
 const CHAINS: EntityProps[] = [
     {
@@ -94,10 +94,6 @@ const CHAINS: EntityProps[] = [
         icon: LightLinkPhoenix,
     },
     {
-        name: "Swell",
-        icon: Swell,
-    },
-    {
         name: "Hemi",
         icon: Hemi,
     },
@@ -124,6 +120,10 @@ const CHAINS: EntityProps[] = [
     {
         name: "MegaETH",
         icon: MegaEth,
+    },
+    {
+        name: "Ink",
+        icon: Ink,
     },
 ];
 
